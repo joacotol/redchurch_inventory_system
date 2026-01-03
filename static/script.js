@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("closeSummaryBtn").onclick = () =>
     modal.classList.add("hidden");
 
-  const emailBtn = document.getElementById("primary-btn");
+  const emailBtn = document.getElementById("emailOrder");
 
   if (emailBtn) {
       emailBtn.addEventListener("click", async () => {
