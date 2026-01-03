@@ -17,6 +17,28 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("closeSummaryBtn").onclick = () =>
     modal.classList.add("hidden");
 
+  const emailBtn = document.getElementById("primary-btn");
+
+  if (emailBtn) {
+      emailBtn.addEventListener("click", async () => {
+          try {
+              const res = await fetch("/email");
+              const data = await res.json();
+
+              const isMobile =
+                  /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+              const url = isMobile ? data.mailto : data.gmail;
+
+              window.open(url, "_blank", "noopener");
+          } catch (err) {
+              alert("Could not open email draft.");
+              console.error(err);
+          }
+      });
+  }
+
+
   modal.onclick = (e) => {
     if (e.target === modal) modal.classList.add("hidden");
   };

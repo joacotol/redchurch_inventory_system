@@ -4,6 +4,8 @@ import os
 import urllib.parse
 from datetime import date
 
+from flask import jsonify
+
 app = Flask(__name__)
 
 FILE_NAME = "catalog.json"
@@ -70,7 +72,6 @@ def remove_from_order():
     orders.pop(request.form["sku"], None)
     return redirect(url_for("index"))
 
-
 @app.route("/email")
 def email_order():
     catalog = load_catalog()
@@ -98,7 +99,17 @@ def email_order():
         f"&body={urllib.parse.quote(body)}"
     )
 
-    return redirect(gmail_url)
+    mailto_url = (
+        "mailto:?"
+        f"subject={urllib.parse.quote(subject)}"
+        f"&body={urllib.parse.quote(body)}"
+    )
+
+    return jsonify({
+        "gmail": gmail_url,
+        "mailto": mailto_url
+    })
+
 
 
 if __name__ == "__main__":
