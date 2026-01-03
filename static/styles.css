@@ -1,0 +1,70 @@
+body {
+  font-family: Arial;
+  margin: 20px;
+}
+button {
+  padding: 6px 10px;
+}
+.primary-btn {
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+}
+.secondary-btn {
+  background: #666;
+  color: #fff;
+  border: none;
+}
+.hidden {
+  display: none;
+}
+.add-item-box {
+  margin: 10px 0;
+  padding: 10px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+}
+.inline-input {
+  width: 60px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal.hidden {
+  display: none;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+}
+.summary-row {
+  border-bottom: 1px solid #eee;
+  padding: 6px 0;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+

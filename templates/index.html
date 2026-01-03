@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Order System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+<h2>Inventory Order System</h2>
+
+<!-- SEARCH -->
+<form method="get" class="search-bar">
+    <input
+        type="text"
+        name="q"
+        id="searchInput"
+        placeholder="Search SKU or Name"
+        value="{{ query }}"
+    >
+    <button type="submit">Search</button>
+    <button type="button" class="secondary-btn" id="resetSearchBtn">
+        Reset
+    </button>
+</form>
+
+<!-- TOP ACTIONS -->
+<div class="top-actions">
+    <button class="primary-btn" id="toggleAddItemBtn">➕ Add New Item</button>
+    <button class="secondary-btn" id="viewSummaryBtn">📋 View Order Summary</button>
+    <a href="/email" target="_blank" rel="noopener">
+        <button class="primary-btn">
+            📧 Email Order to Gmail
+        </button>
+    </a>
+
+</div>
+
+<!-- ADD ITEM -->
+<div id="addItemBox" class="add-item-box hidden">
+    <form method="post" action="/add_item">
+        <input name="sku" placeholder="SKU" required>
+        <input name="name" placeholder="Product Name" required>
+        <input name="unit" placeholder="Unit Type" required>
+        <button class="primary-btn">Save</button>
+        <button type="button" class="secondary-btn" id="cancelAddItemBtn">Cancel</button>
+    </form>
+</div>
+
+<!-- CATALOG (READ-ONLY) -->
+<table>
+<tr>
+    <th>SKU</th>
+    <th>Name</th>
+    <th>Unit</th>
+    <th>Qty</th>
+    <th>Action</th>
+</tr>
+
+{% for item in items %}
+<tr>
+    <td>{{ item.sku }}</td>
+    <td>{{ item.name }}</td>
+    <td>{{ item.unit }}</td>
+    <td>
+        <form method="post" action="/add_to_order">
+            <input type="hidden" name="sku" value="{{ item.sku }}">
+            <input type="number" name="qty" value="1" min="1" class="inline-input">
+    </td>
+    <td>
+            <button>Add</button>
+        </form>
+    </td>
+</tr>
+{% endfor %}
+</table>
+
+<!-- ORDER SUMMARY MODAL -->
+<div id="orderSummaryModal" class="modal hidden">
+    <div class="modal-content">
+        <h3>Order Summary</h3>
+
+        {% set ordered = [] %}
+        {% for i in items %}
+            {% if i.sku in orders %}
+                {% set _ = ordered.append(i) %}
+            {% endif %}
+        {% endfor %}
+
+        {% if ordered|length > 0 %}
+            <div class="summary-list" id="orderSummaryText">
+                {% for i in ordered %}
+                    <div class="summary-row">
+                        {{ orders[i.sku] }} {{ i.unit }}(s) – [{{ i.sku }}] – {{ i.name }}
+
+                        <form method="post" action="/remove_from_order" style="display:inline;">
+                            <input type="hidden" name="sku" value="{{ i.sku }}">
+                            <button class="secondary-btn">Remove</button>
+                        </form>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p id="orderSummaryText">No items in the order yet.</p>
+        {% endif %}
+
+        <div class="modal-actions">
+            <button class="primary-btn" id="copySummaryBtn">
+                📋 Copy to Clipboard
+            </button>
+            <button class="secondary-btn" id="closeSummaryBtn">
+                Close
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
