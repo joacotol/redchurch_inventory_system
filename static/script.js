@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+
   modal.onclick = (e) => {
     if (e.target === modal) modal.classList.add("hidden");
   };
