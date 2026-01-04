@@ -90,12 +90,16 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-    // ----- ADD TO ORDER (AJAX) -----
+  // ----- ADD TO ORDER (AJAX + LIVE SUMMARY UPDATE) -----
   document.querySelectorAll(".add-to-order-form").forEach(form => {
       form.addEventListener("submit", async e => {
           e.preventDefault();
 
           const formData = new FormData(form);
+          const sku = form.dataset.sku;
+          const name = form.dataset.name;
+          const unit = form.dataset.unit;
+          const qty = parseInt(formData.get("qty"), 10);
 
           await fetch("/add_to_order", {
               method: "POST",
@@ -105,11 +109,41 @@ document.addEventListener("DOMContentLoaded", () => {
               }
           });
 
-          // Optional: visual feedback
-          const qtyInput = form.querySelector("input[name='qty']");
-          qtyInput.value = 1;
+          // ----- UPDATE SUMMARY UI -----
+          const summaryList = document.querySelector(".summary-list");
+
+          if (!summaryList) return;
+
+          // Try to find existing summary row
+          let row = summaryList.querySelector(`[data-sku="${sku}"]`);
+
+          if (row) {
+              // Update quantity
+              const qtySpan = row.querySelector(".summary-qty");
+              qtySpan.textContent = parseInt(qtySpan.textContent, 10) + qty;
+          } else {
+              // Create new row
+              row = document.createElement("div");
+              row.className = "summary-row";
+              row.dataset.sku = sku;
+
+              row.innerHTML = `
+                  <span class="summary-qty">${qty}</span> ${unit}(s) – [${sku}] – ${name}
+                  <form class="remove-from-order-form" style="display:inline">
+                      <input type="hidden" name="sku" value="${sku}">
+                      <button class="secondary-btn">Remove</button>
+                  </form>
+              `;
+
+              summaryList.appendChild(row);
+              attachRemoveHandler(row.querySelector(".remove-from-order-form"));
+          }
+
+          // Reset qty field
+          form.querySelector("input[name='qty']").value = 1;
       });
   });
+
 
 
   // ----- REMOVE FROM ORDER (AJAX) -----
@@ -135,3 +169,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
+function attachRemoveHandler(form) {
+    form.addEventListener("submit", async e => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const row = form.closest(".summary-row");
+
+        await fetch("/remove_from_order", {
+            method: "POST",
+            body: formData,
+            headers: {
+                "X-Requested-With": "XMLHttpRequest"
+            }
+        });
+
+        row.remove();
+    });
+}
+

@@ -60,7 +60,11 @@
     <td>{{ item.name }}</td>
     <td>{{ item.unit }}</td>
     <td>
-        <form class="add-to-order-form">
+        <form class="add-to-order-form"
+            data-sku="{{ item.sku }}"
+            data-name="{{ item.name }}"
+            data-unit="{{ item.unit }}">
+
             <input type="hidden" name="sku" value="{{ item.sku }}">
             <input type="number" name="qty" value="1" min="1" class="inline-input">
     </td>
