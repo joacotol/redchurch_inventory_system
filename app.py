@@ -93,11 +93,20 @@ def email_order():
                 f"[{item['sku']}] – {item['name']}"
             )
 
+    newline = "\r\n"
+
     body = (
-        f"Hello,\n\nHere is the following order for Redchurch Cafe for the week of {today}.\n\n"
-        + "\n".join(lines)
-        + "\n\nThank you,\nStefanie Forget\nManager\nRedchurch Cafe\n68 King Street E, Hamilton ON"
+        f"Hello,{newline}{newline}"
+        f"Here is the following order for Redchurch Cafe for the week of {today}.{newline}{newline}"
+        + newline.join(lines)
+        + f"{newline}{newline}"
+        f"Thank you,{newline}"
+        f"Stefanie Forget{newline}"
+        f"Manager{newline}"
+        f"Redchurch Cafe{newline}"
+        f"68 King Street E, Hamilton ON"
     )
+
 
     gmail_url = (
         "https://mail.google.com/mail/?view=cm&fs=1&tf=1"
