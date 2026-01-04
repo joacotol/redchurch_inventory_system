@@ -81,29 +81,9 @@
     <div class="modal-content">
         <h3>Order Summary</h3>
 
-        {% set ordered = [] %}
-        {% for i in items %}
-            {% if i.sku in orders %}
-                {% set _ = ordered.append(i) %}
-            {% endif %}
-        {% endfor %}
-
-        {% if ordered|length > 0 %}
-            <div class="summary-list" id="orderSummaryText">
-                {% for i in ordered %}
-                    <div class="summary-row">
-                        {{ orders[i.sku] }} {{ i.unit }}(s) – [{{ i.sku }}] – {{ i.name }}
-
-                        <form class="remove-from-order-form">
-                            <input type="hidden" name="sku" value="{{ i.sku }}">
-                            <button class="secondary-btn">Remove</button>
-                        </form>
-                    </div>
-                {% endfor %}
-            </div>
-        {% else %}
-            <p id="orderSummaryText">No items in the order yet.</p>
-        {% endif %}
+        <div id="summaryList">
+            <!-- JS will populate this -->
+        </div>
 
         <div class="modal-actions">
             <button class="primary-btn" id="copySummaryBtn">

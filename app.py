@@ -78,6 +78,7 @@ def remove_from_order():
         return jsonify(success=True)
 
     return redirect(url_for("index"))
+
 @app.route("/email")
 def email_order():
     catalog = load_catalog()
@@ -124,6 +125,23 @@ def email_order():
         "gmail": gmail_url,
         "mailto": mailto_url
     })
+
+@app.route("/order_summary")
+def order_summary():
+    catalog = load_catalog()
+    summary = []
+
+    for item in catalog:
+        sku = item["sku"]
+        if sku in orders:
+            summary.append({
+                "sku": sku,
+                "name": item["name"],
+                "unit": item["unit"],
+                "qty": orders[sku]
+            })
+
+    return jsonify(summary)
 
 
 
