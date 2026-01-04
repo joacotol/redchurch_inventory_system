@@ -2,6 +2,14 @@ body {
   font-family: Arial;
   margin: 20px;
 }
+
+.search-bar {
+  margin: 0px 8px;
+}
+
+.search-btn {
+  padding: 6px 10px;
+}
 button {
   padding: 6px 10px;
 }
@@ -9,6 +17,7 @@ button {
   background: #1a73e8;
   color: #fff;
   border: none;
+  margin: 8px;
 }
 .secondary-btn {
   background: #666;
