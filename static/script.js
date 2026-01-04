@@ -28,9 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
               const isMobile =
                   /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-              const url = isMobile ? data.mailto : data.gmail;
-
-              window.open(url, "_blank", "noopener");
+              if (isMobile) {
+                // iOS: use navigation (no window.open)
+                window.location.href = data.mailto;
+              } else {
+                // Desktop: open gmail in new tab
+                window.open(data.gmail, "_blank", "noopener");
+              }
           } catch (err) {
               alert("Could not open email draft.");
               console.error(err);
