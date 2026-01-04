@@ -15,6 +15,10 @@ button {
   color: #fff;
   border: none;
 }
+
+.top-actions {
+  padding: 3%;
+}
 .hidden {
   display: none;
 }
