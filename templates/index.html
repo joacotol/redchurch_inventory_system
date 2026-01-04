@@ -60,7 +60,7 @@
     <td>{{ item.name }}</td>
     <td>{{ item.unit }}</td>
     <td>
-        <form method="post" action="/add_to_order">
+        <form class="add-to-order-form">
             <input type="hidden" name="sku" value="{{ item.sku }}">
             <input type="number" name="qty" value="1" min="1" class="inline-input">
     </td>
@@ -90,7 +90,7 @@
                     <div class="summary-row">
                         {{ orders[i.sku] }} {{ i.unit }}(s) – [{{ i.sku }}] – {{ i.name }}
 
-                        <form method="post" action="/remove_from_order" style="display:inline;">
+                        <form class="remove-from-order-form">
                             <input type="hidden" name="sku" value="{{ i.sku }}">
                             <button class="secondary-btn">Remove</button>
                         </form>

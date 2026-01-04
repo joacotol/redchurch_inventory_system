@@ -64,14 +64,20 @@ def add_to_order():
     sku = request.form["sku"]
     qty = int(request.form["qty"])
     orders[sku] = orders.get(sku, 0) + qty
-    return redirect(url_for("index"))
 
+    if request.headers.get("X-Requested-With") == "XMLHttpRequest":
+        return jsonify(success=True)
+
+    return redirect(url_for("index"))
 
 @app.route("/remove_from_order", methods=["POST"])
 def remove_from_order():
     orders.pop(request.form["sku"], None)
-    return redirect(url_for("index"))
 
+    if request.headers.get("X-Requested-With") == "XMLHttpRequest":
+        return jsonify(success=True)
+
+    return redirect(url_for("index"))
 @app.route("/email")
 def email_order():
     catalog = load_catalog()

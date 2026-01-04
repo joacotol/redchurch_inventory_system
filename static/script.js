@@ -90,4 +90,48 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
+    // ----- ADD TO ORDER (AJAX) -----
+  document.querySelectorAll(".add-to-order-form").forEach(form => {
+      form.addEventListener("submit", async e => {
+          e.preventDefault();
+
+          const formData = new FormData(form);
+
+          await fetch("/add_to_order", {
+              method: "POST",
+              body: formData,
+              headers: {
+                  "X-Requested-With": "XMLHttpRequest"
+              }
+          });
+
+          // Optional: visual feedback
+          const qtyInput = form.querySelector("input[name='qty']");
+          qtyInput.value = 1;
+      });
+  });
+
+
+  // ----- REMOVE FROM ORDER (AJAX) -----
+  document.querySelectorAll(".remove-from-order-form").forEach(form => {
+      form.addEventListener("submit", async e => {
+          e.preventDefault();
+
+          const formData = new FormData(form);
+
+          await fetch("/remove_from_order", {
+              method: "POST",
+              body: formData,
+              headers: {
+                  "X-Requested-With": "XMLHttpRequest"
+              }
+          });
+
+          // Remove row from summary instantly
+          form.closest(".summary-row").remove();
+      });
+  });
+
+
+
 });
