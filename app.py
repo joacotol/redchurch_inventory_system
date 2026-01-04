@@ -90,7 +90,7 @@ def email_order():
     body = (
         f"Hello,\n\nHere is the following order for Redchurch Cafe for the week of {today}.\n\n"
         + "\n".join(lines)
-        + "\n\nThank you,\nJoaquin Tolentino"
+        + "\n\nThank you,\nStefanie Forget\nManager\nRedchurch Cafe\n68 King Street E, Hamilton ON"
     )
 
     gmail_url = (
