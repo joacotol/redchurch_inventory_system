@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import json
 import os
 import urllib.parse
-from datetime import date
+from datetime import date, timedelta
 
 from flask import jsonify
 
@@ -19,6 +19,14 @@ TYPE_ORDER = [
     "Cleaning Products",
     "Other"
 ]
+
+def format_day_with_suffix(d):
+    if 11 <= d.day <= 13:
+        suffix = "th"
+    else:
+        suffix = {1: "st", 2: "nd", 3: "rd"}.get(d.day % 10, "th")
+    return f"{d.strftime('%B')} {d.day}{suffix}"
+
 
 
 
@@ -100,6 +108,14 @@ def email_order():
 
     subject = f"Redchurch Cafe Weekly Order – {today}"
 
+    today_date = date.today()
+    delivery_date = today_date + timedelta(days=1)
+
+    today_formatted = format_day_with_suffix(today_date)
+    delivery_formatted = format_day_with_suffix(delivery_date)
+    delivery_weekday = delivery_date.strftime("%A")
+
+
     lines = []
     for item in catalog:
         if item["sku"] in orders:
@@ -111,8 +127,10 @@ def email_order():
     newline = "\r\n"
 
     body = (
-        f"Hello,{newline}{newline}"
-        f"Here is the following order for Redchurch Cafe for the week of {today}.{newline}{newline}"
+        f"Good morning!{newline}"
+        f"This is our order for the week of {today_formatted}, "
+        f"for a delivery of {delivery_weekday} {delivery_formatted}, please."
+        f"{newline}{newline}"
         + newline.join(lines)
         + f"{newline}{newline}"
         f"Thank you,{newline}"
@@ -121,6 +139,7 @@ def email_order():
         f"Redchurch Cafe{newline}"
         f"68 King Street E, Hamilton ON"
     )
+
 
 
     gmail_url = (
