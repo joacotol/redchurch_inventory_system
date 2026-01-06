@@ -146,13 +146,12 @@ def order_summary():
     summary = []
 
     for item in catalog:
-        sku = item["sku"]
-        if sku in orders:
+        if item["sku"] in orders:
             summary.append({
-                "sku": sku,
+                "sku": item["sku"],
                 "name": item["name"],
                 "unit": item["unit"],
-                "qty": orders[sku]
+                "qty": orders[item["sku"]]
             })
 
     return jsonify(summary)

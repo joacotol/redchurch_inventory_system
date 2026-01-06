@@ -97,6 +97,7 @@ button:active {
 .primary-btn {
     background: var(--brand);
     color: #fff;
+    touch-action: manipulation;
 }
 
 .primary-btn:hover {
@@ -179,6 +180,31 @@ td.name {
 
 tbody tr:nth-child(even) {
     background: #faf7f6;
+}
+
+/* ---------- QTY + ACTION COLUMNS ---------- */
+.qty-col,
+.action-col {
+    vertical-align: middle;
+}
+
+.qty-col {
+    width: 90px;
+    text-align: center;
+}
+
+.action-col {
+    width: 160px;
+    text-align: right;
+}
+
+.qty-col .inline-input {
+    width: 70px;
+}
+
+.action-col .primary-btn {
+    width: 100%;
+    max-width: 140px;
 }
 
 

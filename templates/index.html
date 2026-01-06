@@ -61,8 +61,8 @@
                 <th>SKU</th>
                 <th>Name</th>
                 <th>Unit</th>
-                <th>Qty</th>
-                <th>Action</th>
+                <th class="qty-col">Qty</th>
+                <th class="action-col">Action</th>
             </tr>
 
             <tbody>
@@ -79,25 +79,32 @@
                         {% set ns.last_type = item.type %}
                     {% endif %}
 
-                    <tr>
-                        <td class="sku">{{ item.sku }}</td>
-                        <td class="name">{{ item.name }}</td>
-                        <td>{{ item.unit }}</td>
-                        <td class="qty">
-                            <form class="add-to-order-form">
-                                <input
-                                    type="number"
-                                    name="qty"
-                                    value="1"
-                                    min="1"
-                                    class="inline-input"
-                                />
-                        </td>
-                        <td class="action">
-                                <button class="primary-btn">Add</button>
-                            </form>
-                        </td>
-                    </tr>
+                <tr>
+                    <td class="sku">{{ item.sku }}</td>
+                    <td class="name">{{ item.name }}</td>
+                    <td>{{ item.unit }}</td>
+
+                    <td class="qty-col">
+                        <form class="add-to-order-form">
+                            <input type="hidden" name="sku" value="{{ item.sku }}">
+
+                            <input
+                                type="number"
+                                name="qty"
+                                value="1"
+                                min="1"
+                                class="inline-input"
+                            />
+                    </td>
+
+                    <td class="action-col">
+                            <button class="primary-btn">
+                                Add to Order
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+
 
                 {% endfor %}
             </tbody>
