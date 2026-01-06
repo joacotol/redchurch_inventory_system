@@ -1,80 +1,188 @@
+/* ---------- RESET / BASE ---------- */
+* {
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial;
-  margin: 20px;
+    margin: 0;
+    background: #f4f6f8;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Helvetica, Arial, sans-serif;
+    color: #222;
 }
 
+/* ---------- APP CONTAINER ---------- */
+.app-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ---------- HEADER ---------- */
+h2 {
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+/* ---------- SEARCH BAR ---------- */
 .search-bar {
-  margin: 0px 8px;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
 }
 
-.search-btn {
-  padding: 6px 10px;
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
+
+/* ---------- TOP ACTIONS ---------- */
+.top-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+/* ---------- BUTTONS ---------- */
 button {
-  padding: 6px 10px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
 }
+
 .primary-btn {
-  background: #1a73e8;
-  color: #fff;
-  border: none;
-  margin: 8px;
+    background: #1a73e8;
+    color: white;
 }
+
 .secondary-btn {
-  background: #666;
-  color: #fff;
-  border: none;
+    background: #e0e0e0;
+    color: #222;
 }
 
-.hidden {
-  display: none;
+button:hover {
+    opacity: 0.9;
 }
+
+/* ---------- ADD ITEM CARD ---------- */
 .add-item-box {
-  margin: 10px 0;
-  padding: 10px;
-  background: #fafafa;
-  border: 1px solid #ddd;
-}
-.inline-input {
-  width: 60px;
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
+.add-item-box input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ---------- TABLE ---------- */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-th,
+
+th {
+    background: #f0f2f5;
+    text-align: left;
+    padding: 12px;
+    font-size: 13px;
+}
+
 td {
-  border: 1px solid #ccc;
-  padding: 6px;
+    padding: 12px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
 }
 
+.inline-input {
+    width: 70px;
+    padding: 8px;
+}
+
+/* ---------- MODAL ---------- */
 .modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.modal.hidden {
-  display: none;
-}
-.modal-content {
-  background: #fff;
-  padding: 20px;
-  width: 90%;
-  max-width: 500px;
-}
-.summary-row {
-  border-bottom: 1px solid #eee;
-  padding: 6px 0;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
 }
 
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    width: 92%;
+    max-width: 520px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+/* ---------- ORDER SUMMARY ---------- */
+.summary-row {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-qty {
+    font-weight: 600;
+}
+
+/* ---------- MODAL ACTIONS ---------- */
 .modal-actions {
     display: flex;
-    gap: 10px;
     justify-content: flex-end;
-    margin-top: 15px;
+    gap: 10px;
+    margin-top: 16px;
 }
 
+/* ---------- UTIL ---------- */
+.hidden {
+    display: none;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 700px) {
+    .summary-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}

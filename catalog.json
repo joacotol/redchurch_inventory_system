@@ -220,11 +220,6 @@
     "unit": "Roll"
   },
   {
-    "sku": "8970",
-    "name": "Test",
-    "unit": "Gallon"
-  },
-  {
     "sku": "K009142",
     "name": "Giant 8' Black Straws",
     "unit": "Box"
@@ -233,10 +228,5 @@
     "sku": "8989",
     "name": "16oz White HD Paper Cup Dart",
     "unit": "Case"
-  },
-  {
-    "sku": "test",
-    "name": "test",
-    "unit": "test"
   }
 ]
