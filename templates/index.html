@@ -9,7 +9,17 @@
 <body>
 
     <div class="app-container">
-        <h2>Redchurch Paper Goods Ordering Tool</h2>
+
+        <header class="app-header">
+            <img
+                src="{{ url_for('static', filename='images/redchurch-logo.webp') }}"
+                alt="Redchurch Cafe"
+                class="app-logo"
+            />
+            <div class="app-title">
+                <span>Paper Goods Ordering Tool</span>
+            </div>
+        </header>
 
         <!-- SEARCH -->
         <form method="get" class="search-bar">
@@ -47,34 +57,52 @@
 
         <!-- CATALOG (READ-ONLY) -->
         <table>
-        <tr>
-            <th>SKU</th>
-            <th>Name</th>
-            <th>Unit</th>
-            <th>Qty</th>
-            <th>Action</th>
-        </tr>
+            <tr>
+                <th>SKU</th>
+                <th>Name</th>
+                <th>Unit</th>
+                <th>Qty</th>
+                <th>Action</th>
+            </tr>
 
-        {% for item in items %}
-        <tr>
-            <td>{{ item.sku }}</td>
-            <td>{{ item.name }}</td>
-            <td>{{ item.unit }}</td>
-            <td>
-                <form class="add-to-order-form"
-                    data-sku="{{ item.sku }}"
-                    data-name="{{ item.name }}"
-                    data-unit="{{ item.unit }}">
+            <tbody>
+                {% set ns = namespace(last_type=None) %}
 
-                    <input type="hidden" name="sku" value="{{ item.sku }}">
-                    <input type="number" name="qty" value="1" min="1" class="inline-input">
-            </td>
-            <td>
-                    <button>Add to Order</button>
-                </form>
-            </td>
-        </tr>
-        {% endfor %}
+                {% for item in items %}
+
+                    {% if item.type != ns.last_type %}
+                        <tr class="section-header">
+                            <td colspan="5">
+                                {{ item.type }}
+                            </td>
+                        </tr>
+                        {% set ns.last_type = item.type %}
+                    {% endif %}
+
+                    <tr>
+                        <td class="sku">{{ item.sku }}</td>
+                        <td class="name">{{ item.name }}</td>
+                        <td>{{ item.unit }}</td>
+                        <td class="qty">
+                            <form class="add-to-order-form">
+                                <input
+                                    type="number"
+                                    name="qty"
+                                    value="1"
+                                    min="1"
+                                    class="inline-input"
+                                />
+                        </td>
+                        <td class="action">
+                                <button class="primary-btn">Add</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                {% endfor %}
+            </tbody>
+
+
         </table>
 
         <!-- ORDER SUMMARY MODAL -->

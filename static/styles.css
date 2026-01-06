@@ -1,30 +1,59 @@
-/* ---------- RESET / BASE ---------- */
+/* ---------- BASE ---------- */
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background: #f4f6f8;
+    background: #f5f3f2;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                  Roboto, Helvetica, Arial, sans-serif;
-    color: #222;
+    color: #2b2b2b;
 }
 
-/* ---------- APP CONTAINER ---------- */
+/* ---------- BRAND ---------- */
+:root {
+    --brand: #7b1e23;          /* Redchurch deep red */
+    --brand-dark: #5e161a;
+    --surface: #ffffff;
+    --muted: #777;
+}
+
+/* ---------- CONTAINER ---------- */
 .app-container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 16px;
 }
 
 /* ---------- HEADER ---------- */
-h2 {
-    margin: 0 0 16px 0;
-    font-size: 24px;
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    margin-bottom: 16px;
 }
 
-/* ---------- SEARCH BAR ---------- */
+.app-logo {
+    height: 48px;
+    width: auto;
+}
+
+.app-title h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.app-title span {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* ---------- SEARCH ---------- */
 .search-bar {
     display: flex;
     gap: 8px;
@@ -33,57 +62,66 @@ h2 {
 
 .search-bar input {
     flex: 1;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 10px 12px;
+    border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 14px;
 }
 
 /* ---------- TOP ACTIONS ---------- */
 .top-actions {
+    background: #f5f3f2;
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 12px;
+    z-index: 10;
     margin-bottom: 16px;
 }
 
 /* ---------- BUTTONS ---------- */
 button {
     padding: 10px 14px;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 14px;
     cursor: pointer;
     border: none;
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+button:active {
+    transform: translateY(1px);
 }
 
 .primary-btn {
-    background: #1a73e8;
-    color: white;
+    background: var(--brand);
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: var(--brand-dark);
 }
 
 .secondary-btn {
-    background: #e0e0e0;
+    background: #e8e4e2;
     color: #222;
-}
-
-button:hover {
-    opacity: 0.9;
 }
 
 /* ---------- ADD ITEM CARD ---------- */
 .add-item-box {
-    background: white;
-    border-radius: 8px;
+    background: var(--surface);
+    border-radius: 12px;
     padding: 16px;
     margin-bottom: 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
 
 .add-item-box input {
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #ccc;
 }
 
@@ -91,29 +129,58 @@ button:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
 
+
+/* ---------- TABLE SECTION HEADERS ---------- */
+.section-header td {
+    background: #f1eceb;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #555;
+    padding: 10px 12px;
+    border-top: 2px solid #ddd;
+    padding-top: 16px;
+    position: sticky;
+    top: 44px; /* adjust based on your header height */
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+
 th {
-    background: #f0f2f5;
+    background: #f1eceb;
     text-align: left;
     padding: 12px;
     font-size: 13px;
 }
 
 td {
-    padding: 12px;
+    padding: 14px 12px;
     border-top: 1px solid #eee;
     font-size: 14px;
 }
 
+td.name {
+  font-weight: 700;
+}
+
+
 .inline-input {
     width: 70px;
     padding: 8px;
+    border-radius: 6px;
 }
+
+tbody tr:nth-child(even) {
+    background: #faf7f6;
+}
+
 
 /* ---------- MODAL ---------- */
 .modal {
@@ -131,19 +198,27 @@ td {
 }
 
 .modal-content {
-    background: white;
+    background: var(--surface);
     width: 92%;
     max-width: 520px;
-    border-radius: 10px;
+    border-radius: 14px;
     padding: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    animation: fadeUp 0.18s ease;
 }
 
-.modal-content h3 {
-    margin-top: 0;
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* ---------- ORDER SUMMARY ---------- */
+/* ---------- SUMMARY ---------- */
 .summary-row {
     padding: 10px 0;
     border-bottom: 1px solid #eee;
@@ -182,7 +257,8 @@ td {
         align-items: flex-start;
     }
 
-    table {
-        font-size: 13px;
+    .app-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

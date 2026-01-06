@@ -11,6 +11,16 @@ app = Flask(__name__)
 FILE_NAME = "catalog.json"
 orders = {}  # sku -> qty
 
+TYPE_ORDER = [
+    "Cups",
+    "Lids",
+    "Paper Goods",
+    "Containers",
+    "Cleaning Products",
+    "Other"
+]
+
+
 
 # ---------- Helpers ----------
 
@@ -30,19 +40,23 @@ def save_catalog(catalog):
 @app.route("/", methods=["GET"])
 def index():
     catalog = load_catalog()
-    query = request.args.get("q", "").lower()
 
-    results = [
-        item for item in catalog
-        if not query or query in item["sku"].lower() or query in item["name"].lower()
-    ]
+    def sort_key(item):
+        try:
+            type_index = TYPE_ORDER.index(item.get("type", "Other"))
+        except ValueError:
+            type_index = len(TYPE_ORDER)
+
+        return (type_index, item["name"].lower())
+
+    catalog = sorted(catalog, key=sort_key)
 
     return render_template(
         "index.html",
-        items=results,
-        orders=orders,
-        query=query
+        items=catalog,
+        orders=orders
     )
+
 
 
 @app.route("/add_item", methods=["POST"])
