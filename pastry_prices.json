@@ -1,0 +1,86 @@
+[
+  {
+    "name": "(Cookie) Chocolate Chip",
+    "price": 3.0
+  },
+  {
+    "name": "(Croissant) Almond Croissant",
+    "price": 8.4
+  },
+  {
+    "name": "(Croissant) Pain au Chocolat",
+    "price": 6.15
+  },
+  {
+    "name": "(Croissant) Plain Butter",
+    "price": 4.85
+  },
+  {
+    "name": "(Danish) Goat Cheese",
+    "price": 7.85
+  },
+  {
+    "name": "(Danish) Iced Cinnamon",
+    "price": 6.15
+  },
+  {
+    "name": "(Danish) Sun-dried Tomato Mozzarella",
+    "price": 7.85
+  },
+  {
+    "name": "(Donut) Apple Fritter",
+    "price": 4.5
+  },
+  {
+    "name": "(Donut) Brownie Batter",
+    "price": 3.75
+  },
+  {
+    "name": "(Donut) Frosted Cranberry",
+    "price": 3.75
+  },
+  {
+    "name": "(Donut) London Fog Filled",
+    "price": 4.25
+  },
+  {
+    "name": "(Donut) Vanilla Sprinkle",
+    "price": 3.75
+  },
+  {
+    "name": "(Loaves) Chocolate Banana",
+    "price": 4.25
+  },
+  {
+    "name": "(Loaves) Iced Carrot",
+    "price": 4.25
+  },
+  {
+    "name": "(Muffin) Banana Walnut (V)",
+    "price": 4.75
+  },
+  {
+    "name": "(Muffin) Blueberry Crumble",
+    "price": 4.75
+  },
+  {
+    "name": "(Scone) Blueberry Earl Grey",
+    "price": 5.25
+  },
+  {
+    "name": "(Scone) Cheddar & Chive",
+    "price": 5.25
+  },
+  {
+    "name": "(Square) Caramel Sea Salt Brownie",
+    "price": 5.25
+  },
+  {
+    "name": "(Square) Magic Bar",
+    "price": 5.25
+  },
+  {
+    "name": "(Square) Nanaimo",
+    "price": 5.25
+  }
+]

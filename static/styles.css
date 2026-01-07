@@ -409,3 +409,138 @@ tbody tr:nth-child(even) {
         align-items: flex-start;
     }
 }
+
+/* =========================
+   GLOBAL BUTTON POLISH
+   (applies to <button> and <a>)
+   ========================= */
+
+:root{
+  --btn-h: 44px;
+  --btn-radius: 14px;
+  --btn-pad-x: 16px;
+  --btn-font: 14px;
+  --btn-shadow: 0 10px 22px rgba(0,0,0,.10);
+  --btn-border: #e5e7eb;
+  --btn-border-hover: #d1d5db;
+}
+
+/* Make anchors behave like buttons (kills underline + fixes alignment) */
+a.primary-btn, a.secondary-btn,
+button.primary-btn, button.secondary-btn{
+  height: var(--btn-h);
+  padding: 0 var(--btn-pad-x);
+  border-radius: var(--btn-radius);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-size: var(--btn-font);
+  font-weight: 650;
+  line-height: 1;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: transform 120ms ease, box-shadow 140ms ease, opacity 120ms ease, border-color 120ms ease, background-color 120ms ease;
+}
+
+/* Primary */
+a.primary-btn, button.primary-btn{
+  background: var(--brand);
+  color: #fff !important;
+  border: 1px solid var(--brand);
+}
+
+a.primary-btn:hover, button.primary-btn:hover{
+  transform: translateY(-1px);
+  box-shadow: var(--btn-shadow);
+  opacity: .97;
+}
+
+a.primary-btn:active, button.primary-btn:active{
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Secondary (more “designed” than default) */
+a.secondary-btn, button.secondary-btn{
+  background: #fff;
+  color: #111827;
+  border: 1px solid var(--btn-border);
+}
+
+a.secondary-btn:hover, button.secondary-btn:hover{
+  transform: translateY(-1px);
+  box-shadow: var(--btn-shadow);
+  border-color: var(--btn-border-hover);
+  background: #fafafa;
+}
+
+a.secondary-btn:active, button.secondary-btn:active{
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Focus (keyboard accessibility) */
+a.primary-btn:focus-visible, button.primary-btn:focus-visible,
+a.secondary-btn:focus-visible, button.secondary-btn:focus-visible{
+  outline: 3px solid rgba(127, 29, 29, 0.22);
+  outline-offset: 2px;
+}
+
+/* Prevent visited link color weirdness */
+a.primary-btn:visited { color: #fff !important; }
+a.secondary-btn:visited { color: #111827 !important; }
+
+
+
+/* Make anchor tags styled like our buttons (removes underline + aligns like buttons) */
+a.primary-btn,
+a.secondary-btn,
+a.search-btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Prevent visited links from changing color */
+a.primary-btn,
+a.primary-btn:visited {
+  color: #fff;
+}
+
+a.secondary-btn,
+a.secondary-btn:visited,
+a.search-btn,
+a.search-btn:visited {
+  color: inherit;
+}
+
+a.primary-btn:hover,
+a.secondary-btn:hover,
+a.search-btn:hover {
+  text-decoration: none;
+}
+
+/* Optional: match heights in the top action row */
+.top-actions > button.primary-btn,
+.top-actions > button.secondary-btn,
+.top-actions > a.primary-btn,
+.top-actions > a.secondary-btn {
+  height: 42px;
+}
+
+/* Toolbar spacing for rows of actions */
+.top-actions, .waste-actions, .date-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+

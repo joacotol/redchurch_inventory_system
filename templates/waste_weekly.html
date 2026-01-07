@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weekly Waste Summary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='waste.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="page-header">
+  <a href="{{ url_for('waste_log') }}" class="back-link">← Back to Daily Waste Log</a>
+  <h1>Weekly Waste Summary</h1>
+  <p class="page-subtitle">Week: {{ start_label }} → {{ end_label }}</p>
+</header>
+
+<section class="card waste-card">
+    <form method="GET" action="{{ url_for('waste_weekly') }}" class="waste-toolbar">
+    <div class="toolbar-left">
+        <label for="weekStart" class="toolbar-label">View</label>
+        <select id="weekStart" name="start" class="date-select">
+        {% for w in week_options %}
+            <option value="{{ w.iso }}" {% if w.iso == selected_start_iso %}selected{% endif %}>
+            {{ w.label }}
+            </option>
+        {% endfor %}
+        </select>
+
+        <button type="submit" class="btn btn-ghost">View</button>
+    </div>
+
+    <div class="toolbar-right">
+        <a class="btn btn-ghost" href="{{ url_for('waste_prices') }}">Manage Prices</a>
+
+        <a class="btn btn-primary"
+        href="{{ url_for('export_waste_weekly', start=selected_start_iso) }}">
+        Export Weekly Sheet
+        </a>
+    </div>
+    </form>
+
+
+  <div class="weekly-totals">
+    <div class="mini-card">
+      <div class="mini-title">Units wasted</div>
+      <div class="mini-value">{{ total_qty }}</div>
+      <div class="mini-sub">
+        vs last week: {{ delta_qty }}{% if pct_qty is not none %} ({{ pct_qty }}%){% endif %}
+      </div>
+    </div>
+
+    <div class="mini-card">
+      <div class="mini-title">Estimated cost</div>
+      <div class="mini-value">${{ "%.2f"|format(total_cost) }}</div>
+      <div class="mini-sub">
+        vs last week: ${{ "%.2f"|format(delta_cost) }}{% if pct_cost is not none %} ({{ pct_cost }}%){% endif %}
+      </div>
+    </div>
+  </div>
+
+  {% if unknown_price_items and unknown_price_items|length > 0 %}
+    <p class="note">
+      Note: Some items have no price set, so their cost is not included:
+      {{ unknown_price_items|join(", ") }}
+    </p>
+  {% endif %}
+
+  <h2 class="section-title">Top 3 Waste Items (by cost)</h2>
+  <table class="waste-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th class="qty-col">Units</th>
+        <th class="qty-col">This week</th>
+        <th class="qty-col">Last week</th>
+        <th class="qty-col">Δ</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in top3 %}
+      <tr>
+        <td>{{ r.item }}</td>
+        <td class="qty-col">{{ r.qty }}</td>
+        <td class="qty-col">${{ "%.2f"|format(r.cost) }}</td>
+        <td class="qty-col">${{ "%.2f"|format(r.prev_cost) }}</td>
+        <td class="qty-col">
+          ${{ "%.2f"|format(r.delta_cost) }}{% if r.pct_cost is not none %} ({{ r.pct_cost }}%){% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2 class="section-title">Weekly Cost Graphs</h2>
+
+  <div class="chart-wrap">
+    <h3 class="chart-title">Cost by Day</h3>
+    <canvas id="dailyCostChart"></canvas>
+  </div>
+
+  <div class="chart-wrap">
+    <h3 class="chart-title">Top Items by Cost</h3>
+    <canvas id="itemCostChart"></canvas>
+  </div>
+
+  <h2 class="section-title">By Day</h2>
+  <table class="waste-table">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th class="qty-col">Units</th>
+        <th class="qty-col">Cost</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for d in daily %}
+        <tr>
+          <td>{{ d.label }}</td>
+          <td class="qty-col">{{ d.qty }}</td>
+          <td class="qty-col">${{ "%.2f"|format(d.cost) }}</td>
+          <td><a class="link" href="{{ url_for('waste_log') }}?date={{ d.iso }}">Open</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<script>
+  const dailyLabels = {{ chart_daily_labels | tojson }};
+  const dailyCosts  = {{ chart_daily_costs  | tojson }};
+
+  const itemLabels = {{ chart_item_labels | tojson }};
+  const itemCosts  = {{ chart_item_costs  | tojson }};
+
+  new Chart(document.getElementById("dailyCostChart"), {
+    type: "bar",
+    data: {
+      labels: dailyLabels,
+      datasets: [{ label: "Cost ($)", data: dailyCosts }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: true } },
+      scales: { y: { beginAtZero: true } }
+    }
+  });
+
+  new Chart(document.getElementById("itemCostChart"), {
+    type: "bar",
+    data: {
+      labels: itemLabels,
+      datasets: [{ label: "Cost ($)", data: itemCosts }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: true } },
+      scales: { y: { beginAtZero: true } }
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daily Pastry Waste Log</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Keep your app theme -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='waste.css') }}">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <a href="{{ url_for('index') }}" class="back-link">← Back to Ordering</a>
+    <h1>🧁 Daily Pastry Waste Log</h1>
+    <p class="page-subtitle">
+      Log what didn’t sell today. This helps reduce waste — no blame.
+    </p>
+  </header>
+
+  <section class="waste-date">
+    <div class="date-left">
+      <div><strong>Date:</strong> {{ today }}</div>
+      <input type="hidden" id="wasteDateIso" value="{{ today_iso }}">
+    </div>
+
+    <div class="date-right">
+      <label for="viewDateSelect" class="toolbar-label"><strong>View day:</strong></label>
+      <select id="viewDateSelect" class="date-select">
+        {% for opt in date_options %}
+          <option value="{{ opt.iso }}" {% if opt.iso == selected_date_iso %}selected{% endif %}>
+            {{ opt.label }}
+          </option>
+        {% endfor %}
+      </select>
+
+      <a class="btn btn-primary" href="{{ url_for('waste_weekly', start=week_start_iso) }}">
+        Weekly Summary
+      </a>
+
+
+      <a class="btn btn-ghost" href="{{ url_for('waste_prices') }}">
+        Manage Prices
+      </a>
+    </div>
+  </section>
+
+
+
+
+  <!-- LOG CARD -->
+  <section class="card waste-card">
+
+    <table class="waste-table">
+      <thead>
+        <tr>
+          <th>Pastry</th>
+          <th class="qty-col">Qty</th>
+          <th>Reason</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody id="wasteRows">
+        {% for row in initial_rows %}
+          {% set item_val = row.get('item', '') %}
+          {% set qty_val = row.get('qty', 1) %}
+          {% set reason_val = row.get('reason', 'Not sold') %}
+          <tr>
+            <td>
+              <select class="waste-item">
+                <option value="">Select item</option>
+                {% for p in pastry_items %}
+                  <option value="{{ p }}" {% if item_val == p %}selected{% endif %}>
+                    {{ p }}
+                  </option>
+                {% endfor %}
+              </select>
+            </td>
+
+            <td class="qty-col">
+              <div class="qty-control" data-qty="{{ qty_val }}">
+                <button type="button" class="qty-btn minus" aria-label="Decrease quantity">−</button>
+                <span class="qty-display">{{ qty_val }}</span>
+                <button type="button" class="qty-btn plus" aria-label="Increase quantity">+</button>
+              </div>
+            </td>
+
+            <td>
+              <select class="waste-reason">
+                {% for r in waste_reasons %}
+                  <option value="{{ r }}" {% if reason_val == r %}selected{% endif %}>
+                    {{ r }}
+                  </option>
+                {% endfor %}
+              </select>
+            </td>
+
+            <td>
+              <button type="button" class="remove-row" aria-label="Remove row">✕</button>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <!-- ACTIONS -->
+    <div class="waste-actions">
+      <button id="addRowBtn" class="secondary-btn" type="button">
+        + Add item
+      </button>
+
+      <div class="save-wrap">
+        <button id="saveWasteBtn" class="primary-btn" type="button">
+          Save Daily Log
+        </button>
+        <span id="saveStatus" class="save-status" role="status" aria-live="polite"></span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Row template -->
+  <template id="wasteRowTemplate">
+    <tr>
+      <td>
+        <select class="waste-item">
+          <option value="">Select item</option>
+          {% for p in pastry_items %}
+            <option value="{{ p }}">{{ p }}</option>
+          {% endfor %}
+        </select>
+      </td>
+
+      <td class="qty-col">
+        <div class="qty-control" data-qty="1">
+          <button type="button" class="qty-btn minus" aria-label="Decrease quantity">−</button>
+          <span class="qty-display">1</span>
+          <button type="button" class="qty-btn plus" aria-label="Increase quantity">+</button>
+        </div>
+      </td>
+
+      <td>
+        <select class="waste-reason">
+          {% for r in waste_reasons %}
+            <option value="{{ r }}">{{ r }}</option>
+          {% endfor %}
+        </select>
+      </td>
+
+      <td>
+        <button type="button" class="remove-row" aria-label="Remove row">✕</button>
+      </td>
+    </tr>
+  </template>
+
+  <script src="{{ url_for('static', filename='waste.js') }}"></script>
+</body>
+</html>
