@@ -3,6 +3,7 @@ import json
 import os
 import urllib.parse
 from datetime import date, timedelta
+import subprocess
 
 from flask import jsonify
 
@@ -10,6 +11,7 @@ app = Flask(__name__)
 
 FILE_NAME = "catalog.json"
 orders = {}  # sku -> qty
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
 TYPE_ORDER = [
     "Cups",
@@ -30,6 +32,7 @@ def format_day_with_suffix(d):
 
 
 
+
 # ---------- Helpers ----------
 
 def load_catalog():
@@ -39,8 +42,17 @@ def load_catalog():
         return json.load(f)
 
 def save_catalog(catalog):
-    with open(FILE_NAME, "w", encoding="utf-8") as f:
+    with open("catalog.json", "w") as f:
         json.dump(catalog, f, indent=2)
+
+    subprocess.run(["git", "add", "catalog.json"])
+    subprocess.run(["git", "commit", "-m", "Update catalog"])
+    subprocess.run([
+        "git",
+        "push",
+        f"https://{GITHUB_TOKEN}@github.com/joacotol/redchurch_inventory_system.git",
+        "main"
+    ])
 
 
 # ---------- Routes ----------
@@ -62,7 +74,8 @@ def index():
     return render_template(
         "index.html",
         items=catalog,
-        orders=orders
+        orders=orders,
+        product_types=TYPE_ORDER
     )
 
 
@@ -70,11 +83,16 @@ def index():
 @app.route("/add_item", methods=["POST"])
 def add_item():
     catalog = load_catalog()
+    item_type = request.form["type"]
+
+    if item_type not in TYPE_ORDER:
+        abort(400, "Invalid Product Type")
 
     catalog.append({
         "sku": request.form["sku"],
         "name": request.form["name"],
-        "unit": request.form["unit"]
+        "unit": request.form["unit"],
+        "type": item_type
     })
 
     save_catalog(catalog)

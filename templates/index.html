@@ -50,6 +50,18 @@
                 <input name="sku" placeholder="SKU" required>
                 <input name="name" placeholder="Product Name" required>
                 <input name="unit" placeholder="Unit Type" required>
+                <label>
+                    Product Type
+                    <select name="type" required>
+                        <option value="" disabled selected>
+                            Select a type
+                        </option>
+
+                        {% for t in product_types %}
+                            <option value="{{ t }}">{{ t }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
                 <button class="primary-btn">Save</button>
                 <button type="button" class="secondary-btn" id="cancelAddItemBtn">Cancel</button>
             </form>
