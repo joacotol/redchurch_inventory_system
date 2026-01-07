@@ -52,33 +52,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const emailBtn = document.getElementById("emailOrder");
 
   if (emailBtn) {
-    emailBtn.addEventListener("click", async () => {
-        let emailWindow = null;
+      emailBtn.addEventListener("click", async () => {
+          try {
+              const res = await fetch("/email");
+              const data = await res.json();
 
-        // MUST happen synchronously on click
-        emailWindow = window.open("", "_blank");
+              const isMobile =
+                  /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-        try {
-            const res = await fetch("/email");
-            const data = await res.json();
-
-            const isMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-            if (isMobile) {
-                // iOS Safari prefers navigation, not window.open
-                emailWindow.location.href = data.mailto;
-            } else {
-                emailWindow.location.href = data.gmail;
-            }
-
-        } catch (err) {
-            if (emailWindow) emailWindow.close();
-            alert("Unable to create email draft.");
-            console.error(err);
-        }
-    });
-
-}
+              if (isMobile) {
+                // iOS: use navigation (no window.open)
+                window.location.href = data.mailto;
+              } else {
+                // Desktop: open gmail in new tab
+                window.open(data.gmail, "_blank", "noopener");
+              }
+          } catch (err) {
+              alert("Could not open email draft.");
+              console.error(err);
+          }
+      });
+  }
 
 
 
