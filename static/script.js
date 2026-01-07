@@ -1,4 +1,41 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    const searchInput = document.getElementById("searchInput");
+
+    if (searchInput) {
+        searchInput.addEventListener("input", () => {
+            const query = searchInput.value.toLowerCase().trim();
+
+            const rows = document.querySelectorAll(".product-row");
+            const headers = document.querySelectorAll(".section-header");
+
+            // Reset header visibility
+            headers.forEach(h => h.style.display = "none");
+
+            rows.forEach(row => {
+            const text = row.innerText.toLowerCase();
+            const matches = text.includes(query);
+
+            row.style.display = matches ? "" : "none";
+
+            if (matches) {
+                // Show the section header above this row
+                let prev = row.previousElementSibling;
+                while (prev && !prev.classList.contains("section-header")) {
+                prev = prev.previousElementSibling;
+                }
+                if (prev) prev.style.display = "";
+            }
+            });
+
+            // If search is empty, show everything
+            if (!query) {
+            rows.forEach(r => r.style.display = "");
+            headers.forEach(h => h.style.display = "");
+            }
+        });
+    }
+
   const addBox = document.getElementById("addItemBox");
 
   document.getElementById("toggleAddItemBtn").onclick = () =>
@@ -74,6 +111,30 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
+  document.querySelectorAll(".qty-control").forEach(control => {
+    const minus = control.querySelector(".minus");
+    const plus = control.querySelector(".plus");
+    const display = control.querySelector(".qty-display");
+    const input = control.querySelector(".qty-input");
+
+    let value = parseInt(input.value, 10);
+
+    minus.addEventListener("click", () => {
+        if (value > 1) {
+            value--;
+            display.textContent = value;
+            input.value = value;
+        }
+    });
+
+    plus.addEventListener("click", () => {
+        value++;
+        display.textContent = value;
+        input.value = value;
+    });
+  });
+
+
 
 
   modal.onclick = (e) => {
@@ -136,15 +197,28 @@ document.addEventListener("DOMContentLoaded", () => {
                   "X-Requested-With": "XMLHttpRequest"
               }
           });
+// Visual confirmation
+        const row = form.closest("tr");
+        if (row) {
+            row.classList.add("row-added");
+            setTimeout(() => row.classList.remove("row-added"), 800);
+        }
 
-          // Reset qty input
-          const qtyInput = form.querySelector("input[name='qty']");
-          if (qtyInput) qtyInput.value = 1;
+        // Pulse qty field
+        const qtyInput = form.querySelector("input[name='qty']");
+        if (qtyInput) {
+            qtyInput.classList.add("qty-pulse");
+            setTimeout(() => qtyInput.classList.remove("qty-pulse"), 500);
+            qtyInput.value = 1
+        }
+          
       });
   });
 
 
 });
+
+
 
 function attachRemoveHandler(form) {
     form.addEventListener("submit", async e => {

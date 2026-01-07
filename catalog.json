@@ -3,276 +3,326 @@
     "sku": "DB230",
     "name": "Corsage Pink Hand Soap 5L",
     "unit": "Gallon",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "Corsage Pink Hand Soap 5L"
   },
   {
     "sku": "DB557",
     "name": "Quatromyicide 750ML",
     "unit": "Case",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "Quatromyicide 750ml",
+    "description": "(Disinfectant) Food-safe disinfectant used to sanitize counters, prep surfaces, and equipment."
   },
   {
     "sku": "DB746",
     "name": "Azure Glass Cleaner 4L",
     "unit": "Gallon",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "Azure Glass Cleaner 4L",
+    "description": "Cleaner for windows, mirrors, display cases, and glass surfaces. Leaves surfaces streak-free."
   },
   {
     "sku": "6425",
     "name": "6% Lavo Bleach 6x3.6L",
     "unit": "Case",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "6% Lavo Bleach 6L",
+    "description":"(Disinfectant) Strong disinfectant used for deep cleaning, sanitizing drains, and high-risk areas. Use diluted and with caution."
   },
   {
     "sku": "6801",
     "name": "6x9 Green Scouring Pad",
     "unit": "Pack",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "Green Scouring Pad"
   },
   {
     "sku": "7696",
     "name": "Stainless Steel Sponges",
     "unit": "Box",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "Stainless Steel Sponges"
   },
   {
     "sku": "7709",
     "name": "4x4x8 Grill Bricks",
     "unit": "Box",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "Grill Bricks"
   },
   {
     "sku": "7690",
     "name": "01804 White Multi Fold Towel",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "White Multi Fold Towel",
+    "description": "Paper towels for hand drying and cleaning at washrooms."
   },
   {
     "sku": "008188",
     "name": "H045 Kraft Roll Towel 7.8'X425'",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "Kraft Roll Towel"
   },
   {
     "sku": "008279",
     "name": "2ply Bath Tissue 48x500",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "2Ply Bath Tissue"
   },
   {
     "sku": "8493",
     "name": "Kleenex Luxury Foam Soap Frag. Free",
     "unit": "Case",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "Kleenex Foam Soap Frag. Free"
   },
   {
     "sku": "9592",
     "name": "24x22 White Regular Garbage Bag",
     "unit": "Case",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "White Regular Garbage Bags"
   },
   {
     "sku": "9584",
     "name": "30x38 Black Strong Garbage Bag #2673",
     "unit": "Case",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "Black Strong Garbage Bag"
   },
   {
     "sku": "2300",
     "name": "8x4.5x10.25 Paper Shopping Bag",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "Small Paper Shopping Bags"
   },
   {
     "sku": "002306",
     "name": "10x5x13 Kraft Shopping Bag",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "Medium Kraft Shopping Bags"
   },
   {
     "sku": "008971",
     "name": "4oz White Hot Drink Cup",
     "unit": "Case",
-    "type": "Cups"
+    "type": "Cups",
+    "display_name": "4oz White Paper Hot Drink Cups"
   },
   {
     "sku": "004822",
     "name": "4oz White Vented Lid",
     "unit": "Case",
-    "type": "Lids"
+    "type": "Lids",
+    "display_name": "4oz White Vented Lid"
   },
   {
     "sku": "9080",
     "name": "8oz White Paper Hot Drink Cup",
     "unit": "Case",
-    "type": "Cups"
+    "type": "Cups",
+    "display_name": "8oz White Paper Hot Drink Cups"
   },
   {
     "sku": "008998",
     "name": "10oz White Paper Hot Drink Cup Dart",
     "unit": "Case",
-    "type": "Cups"
+    "type": "Cups",
+    "display_name": "10oz White Paper Hot Drink Cups"
   },
   {
     "sku": "7613",
     "name": "CH21314 4 Cup Carrier Tray",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "4 Cup Carrier Tray"
   },
   {
     "sku": "9921",
     "name": "7 Wooden Stir Stick",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "7' Wooden Stir Sticks"
   },
   {
     "sku": "6770",
     "name": "12oz Clear Conex Pro Cup 12PX",
     "unit": "Case",
-    "type": "Cups"
+    "type": "Cups",
+    "display_name": "12oz Clear Plastic Cups"
   },
   {
     "sku": "004799",
     "name": "16oz Clear Conex Pro Cup 16PX",
     "unit": "Case",
-    "type": "Cups"
+    "type": "Cups",
+    "display_name": "16oz Clear Plastic Cups"
   },
   {
     "sku": "6771",
     "name": "20oz Clear Conex Pro Cup 20px",
     "unit": "Case",
-    "type": "Cups"
+    "type": "Cups",
+    "display_name": "20oz Clear Plastic Cups"
   },
   {
     "sku": "6772",
     "name": "Straw Slot Plastic Lid",
     "unit": "Case",
-    "type": "Lids"
+    "type": "Lids",
+    "display_name": "Straw Slot Plastic Lids"
   },
   {
     "sku": "6773",
     "name": "DLR626 Dome Lid Whole",
     "unit": "Case",
-    "type": "Lids"
+    "type": "Lids",
+    "display_name": "Dome Lid Whole"
   },
   {
     "sku": "4516",
     "name": "2oz Plastic Portion Cup",
     "unit": "Case",
-    "type": "Cups"
+    "type": "Cups",
+    "display_name": "2oz Plastic Portion Cups"
   },
   {
     "sku": "4526",
     "name": "2oz Portion Cup Lid",
     "unit": "Case",
-    "type": "Lids"
+    "type": "Lids",
+    "display_name": "2oz Portion Cup Lids"
   },
   {
     "sku": "6700",
     "name": "16oz Deli Container",
     "unit": "Case",
-    "type": "Containers"
+    "type": "Containers",
+    "display_name": "16oz Deli Container"
   },
   {
     "sku": "6701",
     "name": "32oz Deli Container",
     "unit": "Case",
-    "type": "Containers"
+    "type": "Containers",
+    "display_name": "32oz Deli Container"
   },
   {
     "sku": "6702",
     "name": "Lids for Deli Containers",
     "unit": "Case",
-    "type": "Lids"
+    "type": "Lids",
+    "display_name": "Deli Container Lids"
   },
   {
     "sku": "8951",
     "name": "12oz Kraft Paper Soup Bowl",
     "unit": "Case",
-    "type": "Containers"
+    "type": "Containers",
+    "display_name": "12oz Kraft Paper Soup Bowls"
   },
   {
     "sku": "8953",
     "name": "Lid for 12/16oz Kraft Soup Bowl",
     "unit": "Case",
-    "type": "Lids"
+    "type": "Lids",
+    "display_name": "Lids For 12/16oz Kraft Soup Bowls"
   },
   {
     "sku": "5752",
     "name": "6.5x4x3 White Pastry Box",
     "unit": "Case",
-    "type": "Containers"
+    "type": "Containers",
+    "display_name": "6.5X4X3 White Pastry Box"
   },
   {
     "sku": "9182",
     "name": "#3 Kraft Bio-Plus Food Container",
     "unit": "Case",
-    "type": "Containers"
+    "type": "Containers",
+    "display_name": "Kraft Bio-Plus Food Container"
   },
   {
     "sku": "8235",
     "name": "2ply White Dinner Napkins",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "2Ply White Dinner Napkins"
   },
   {
     "sku": "9319",
     "name": "Plant Based Compostable Soup Spoon",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "Plant Based Spoons"
   },
   {
     "sku": "9320",
     "name": "Plant Based Compostable Fork",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "Plant Based Forks"
   },
   {
     "sku": "3994",
     "name": "X-Large Vinyl Gloves",
     "unit": "Box",
-    "type": "Cleaning Products"
+    "type": "Cleaning Products",
+    "display_name": "X-Large Vinyl Gloves"
   },
   {
     "sku": "2961",
     "name": "6x2x9 Sandwich Bag",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "White Sandwich Bags"
   },
   {
     "sku": "2970",
     "name": "12x12 Chocolate Greaseproof Liner",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "Greaseproof Liner (Pastries)"
   },
   {
     "sku": "2974",
     "name": "14x14 Insul Wrap",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "Insulated Wrap"
   },
   {
     "sku": "2989",
     "name": "16.5x24.5 Parchment Liner",
     "unit": "Case",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "Parchment Liner"
   },
   {
     "sku": "6878",
     "name": "24mm x 55m Masking Tape",
     "unit": "Roll",
-    "type": "Other"
+    "type": "Other",
+    "display_name": "24Mm X 55M Masking Tape"
   },
   {
     "sku": "K009142",
     "name": "Giant 8' Black Straws",
     "unit": "Box",
-    "type": "Paper Goods"
+    "type": "Paper Goods",
+    "display_name": "Giant 8' Black Straws"
   },
   {
     "sku": "8989",
     "name": "16oz White HD Paper Cup Dart",
     "unit": "Case",
-    "type": "Cups"
+    "type": "Cups",
+    "display_name": "16oz White Paper Hot Drink Cups"
   }
 ]

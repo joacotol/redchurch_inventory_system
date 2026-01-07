@@ -126,6 +126,34 @@ button:active {
     border: 1px solid #ccc;
 }
 
+/* ---------- ADD ITEM FORM FIELDS ---------- */
+.add-item-box .field-label {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 6px;
+}
+
+.add-item-box .field-input,
+.add-item-box select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background: #fff;
+}
+
+.add-item-box .form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+
+
+
 /* ---------- TABLE ---------- */
 table {
     width: 100%;
@@ -182,6 +210,44 @@ tbody tr:nth-child(even) {
     background: #faf7f6;
 }
 
+/* ---------- TOOLTIP ---------- */
+.name {
+    position: relative;
+}
+
+.info-icon {
+    margin-left: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #888;
+}
+
+.tooltip {
+    position: absolute;
+    left: 0;
+    top: 120%;
+    background: #2b2b2b;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    width: max-content;
+    max-width: 260px;
+    line-height: 1.4;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+    z-index: 20;
+}
+
+.name:hover .tooltip,
+.name:focus-within .tooltip {
+    opacity: 1;
+}
+
+
+
+
 /* ---------- QTY + ACTION COLUMNS ---------- */
 .qty-col,
 .action-col {
@@ -206,6 +272,61 @@ tbody tr:nth-child(even) {
     width: 100%;
     max-width: 140px;
 }
+
+/* ---------- QUANTITY CONTROL ---------- */
+.qty-control {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    background: #7a1c1c; /* your brand red */
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty-btn:hover {
+    opacity: 0.9;
+}
+
+.qty-display {
+    min-width: 22px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* ---------- ADD CONFIRMATION ---------- */
+.row-added {
+  animation: addFlash 0.8s ease;
+}
+
+@keyframes addFlash {
+  0%   { background-color: #e6f6ea; }
+  100% { background-color: transparent; }
+}
+
+.qty-pulse {
+  animation: qtyPulse 0.5s ease;
+}
+
+@keyframes qtyPulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
 
 
 /* ---------- MODAL ---------- */

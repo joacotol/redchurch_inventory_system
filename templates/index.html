@@ -22,7 +22,7 @@
         </header>
 
         <!-- SEARCH -->
-        <form method="get" class="search-bar">
+        <form class="search-bar" onsubmit="return false;">
             <input
                 type="text"
                 name="q"
@@ -50,20 +50,22 @@
                 <input name="sku" placeholder="SKU" required>
                 <input name="name" placeholder="Product Name" required>
                 <input name="unit" placeholder="Unit Type" required>
-                <label>
-                    Product Type
-                    <select name="type" required>
-                        <option value="" disabled selected>
-                            Select a type
-                        </option>
+                <label class="field-label">Product Type</label>
+                <select name="type" class="field-input" required>
+                    <option value="" disabled selected>
+                        Select a type
+                    </option>
 
-                        {% for t in product_types %}
-                            <option value="{{ t }}">{{ t }}</option>
-                        {% endfor %}
-                    </select>
-                </label>
-                <button class="primary-btn">Save</button>
-                <button type="button" class="secondary-btn" id="cancelAddItemBtn">Cancel</button>
+                    {% for t in product_types %}
+                        <option value="{{ t }}">{{ t }}</option>
+                    {% endfor %}
+                </select>
+
+                <div class="form-actions">
+                    <button class="primary-btn">Save</button>
+                    <button type="button" class="secondary-btn" id="cancelAddItemBtn">Cancel</button>
+                </div>
+                
             </form>
         </div>
 
@@ -91,22 +93,42 @@
                         {% set ns.last_type = item.type %}
                     {% endif %}
 
-                <tr>
+                <tr class="product-row">
                     <td class="sku">{{ item.sku }}</td>
-                    <td class="name">{{ item.name }}</td>
+                    <td class="name">
+                        <span class="item-name">
+                            {{ item.display_name or item.name }}
+                        </span>
+
+                        {% if item.description %}
+                            <span class="info-icon" tabindex="0">ⓘ</span>
+                            <div class="tooltip">
+                            {{ item.description }}
+                            </div>
+                        {% endif %}
+                    </td>
+
                     <td>{{ item.unit }}</td>
 
                     <td class="qty-col">
                         <form class="add-to-order-form">
                             <input type="hidden" name="sku" value="{{ item.sku }}">
 
-                            <input
-                                type="number"
-                                name="qty"
-                                value="1"
-                                min="1"
-                                class="inline-input"
-                            />
+                            <div class="qty-control">
+                                <button type="button" class="qty-btn minus">−</button>
+
+                                <input
+                                    type="hidden"
+                                    name="qty"
+                                    value="1"
+                                    class="qty-input"
+                                />
+
+                                <span class="qty-display">1</span>
+
+                                <button type="button" class="qty-btn plus">+</button>
+                            </div>
+
                     </td>
 
                     <td class="action-col">

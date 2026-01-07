@@ -4,6 +4,7 @@ import os
 import urllib.parse
 from datetime import date, timedelta
 import subprocess
+import re
 
 from flask import jsonify
 
@@ -21,6 +22,12 @@ TYPE_ORDER = [
     "Cleaning Products",
     "Other"
 ]
+
+CUP_SUBTYPE_ORDER = {
+    "paper": 0,
+    "plastic": 1,
+    "portion": 2
+}
 
 def format_day_with_suffix(d):
     if 11 <= d.day <= 13:
@@ -54,6 +61,21 @@ def save_catalog(catalog):
         "main"
     ])
 
+def cup_subtype(name: str) -> int:
+    n = name.lower()
+
+    if "portion" in n:
+        return 2
+    if "clear" in n or "plastic" in n:
+        return 1
+    return 0  # paper (default)
+
+def extract_oz(name: str) -> int:
+    match = re.search(r"(\d+)\s?oz", name.lower())
+    return int(match.group(1)) if match else 999
+
+
+
 
 # ---------- Routes ----------
 
@@ -67,7 +89,20 @@ def index():
         except ValueError:
             type_index = len(TYPE_ORDER)
 
-        return (type_index, item["name"].lower())
+        name_for_sort = (item.get("display_name") or item["name"]).lower()
+
+        # Special sorting for Cups
+        if item.get("type") == "Cups":
+            return (
+                type_index,
+                cup_subtype(name_for_sort),
+                extract_oz(name_for_sort),
+                name_for_sort
+            )
+
+        # Default sorting for all other types
+        return (type_index, name_for_sort)
+
 
     catalog = sorted(catalog, key=sort_key)
 
