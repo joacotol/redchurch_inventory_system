@@ -26,7 +26,7 @@ def _authed_remote_url():
         return None
     return f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
 
-_GIT_LOCK = "tmp/git_persist.lock"
+_GIT_LOCK = "/tmp/git_persist.lock"
 
 def _git_with_lock(fn):
     with open(_GIT_LOCK, "w") as lock:
