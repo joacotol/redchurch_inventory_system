@@ -6,6 +6,7 @@ import urllib.parse
 from datetime import date, timedelta, datetime
 import subprocess
 import re
+import fcntl
 
 from flask import jsonify
 
@@ -19,9 +20,17 @@ from openpyxl.chart import BarChart, Reference
 
 app = Flask(__name__)
 
+# Pull latest persisted JSONs when the service starts (survives sleep/wake)
+try:
+    git_pull_latest_hard()
+except Exception as e:
+    print(f"[WARN] git pull failed on boot: {e}")
+
 FILE_NAME = "catalog.json"
 orders = {}  # sku -> qty
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_REPO = os.getenv("GITHUB_REPO", "joacotol/redchurch_inventory_system")
+GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
 
 TYPE_ORDER = [
     "Cups",
@@ -49,6 +58,8 @@ WASTE_REASONS = [
     "Staff error",
     "Other",
 ]
+
+
 
 
 
@@ -173,10 +184,14 @@ def load_waste_logs():
     with open(WASTE_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def save_waste_logs(logs: dict, message: str):
+def save_waste_logs(logs: dict, commit_message: str):
     with open(WASTE_FILE, "w", encoding="utf-8") as f:
         json.dump(logs, f, indent=2, ensure_ascii=False)
-    git_push_file_if_possible(WASTE_FILE, message)
+
+    try:
+        git_commit_push_file(WASTE_FILE, commit_message)
+    except Exception as e:
+        print(f"[WARN] Could not push waste logs: {e}")
 
 def build_date_options(logs: dict, include_today: bool = True, limit: int = 60):
     keys = []
@@ -524,6 +539,74 @@ def build_weekly_waste_workbook(start_date: date, agg: dict):
 
     return wb
 
+# -- Persistence Storage for Waste Log
+def _authed_remote_url():
+    if not GITHUB_TOKEN:
+        return None
+    return f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
+
+_GIT_LOCK = "tmp/git_persist.lock"
+
+def _git_with_lock(fn):
+    with open(_GIT_LOCK, "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        return fn()
+    
+def git_setup_identity():
+    # Prevent commit failures due to missing identity
+    _git_run(["git", "config", "user.email", "render-bot@local"])
+    _git_run(["git", "config", "user.name", "Render Bot"])
+
+def git_setup_identity():
+    # Prevent commit failures due to missing identity
+    _git_run(["git", "config", "user.email", "render-bot@local"])
+    _git_run(["git", "config", "user.name", "Render Bot"])
+
+def git_pull_latest_hard():
+    """
+    On boot, force local files to match the latest repo state.
+    This is what makes data survive Render sleep/wake.
+    """
+    def work():
+        if not GITHUB_TOKEN:
+            return
+        git_setup_identity()
+        git_set_origin_to_authed()
+        _git_run(["git", "fetch", "origin", GITHUB_BRANCH])
+        _git_run(["git", "checkout", GITHUB_BRANCH])
+        _git_run(["git", "reset", "--hard", f"origin/{GITHUB_BRANCH}"])
+    return _git_with_lock(work)
+
+def git_commit_push_file(file_path: str, message: str):
+    """
+    Add/commit/push a single file. Safe when there are no changes.
+    Retries once if remote advanced (non-fast-forward).
+    """
+    def work():
+        if not GITHUB_TOKEN:
+            return
+
+        git_setup_identity()
+        git_set_origin_to_authed()
+
+        _git_run(["git", "add", file_path])
+
+        # If nothing staged, skip commit/push
+        diff = _git_run(["git", "diff", "--cached", "--name-only"])
+        if diff.returncode != 0 or not diff.stdout.strip():
+            return
+
+        _git_run(["git", "commit", "-m", message])
+
+        push = _git_run(["git", "push", "origin", GITHUB_BRANCH])
+        if push.returncode == 0:
+            return
+
+        # Retry once: pull/rebase then push
+        _git_run(["git", "pull", "--rebase", "origin", GITHUB_BRANCH])
+        _git_run(["git", "push", "origin", GITHUB_BRANCH])
+
+    return _git_with_lock(work)
 # ---------- Routes ----------
 
 @app.route("/", methods=["GET"])
