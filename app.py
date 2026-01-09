@@ -20,6 +20,62 @@ from openpyxl.chart import BarChart, Reference
 
 app = Flask(__name__)
 
+# -- Persistence Storage for Waste Log
+def _authed_remote_url():
+    if not GITHUB_TOKEN:
+        return None
+    return f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
+
+_GIT_LOCK = "tmp/git_persist.lock"
+
+def _git_with_lock(fn):
+    with open(_GIT_LOCK, "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        return fn()
+    
+def git_setup_identity():
+    # Prevent commit failures due to missing identity
+    _git_run(["git", "config", "user.email", "render-bot@local"])
+    _git_run(["git", "config", "user.name", "Render Bot"])
+
+def git_setup_identity():
+    # Prevent commit failures due to missing identity
+    _git_run(["git", "config", "user.email", "render-bot@local"])
+    _git_run(["git", "config", "user.name", "Render Bot"])
+
+
+
+def git_commit_push_file(file_path: str, message: str):
+    """
+    Add/commit/push a single file. Safe when there are no changes.
+    Retries once if remote advanced (non-fast-forward).
+    """
+    def work():
+        if not GITHUB_TOKEN:
+            return
+
+        git_setup_identity()
+        git_set_origin_to_authed()
+
+        _git_run(["git", "add", file_path])
+
+        # If nothing staged, skip commit/push
+        diff = _git_run(["git", "diff", "--cached", "--name-only"])
+        if diff.returncode != 0 or not diff.stdout.strip():
+            return
+
+        _git_run(["git", "commit", "-m", message])
+
+        push = _git_run(["git", "push", "origin", GITHUB_BRANCH])
+        if push.returncode == 0:
+            return
+
+        # Retry once: pull/rebase then push
+        _git_run(["git", "pull", "--rebase", "origin", GITHUB_BRANCH])
+        _git_run(["git", "push", "origin", GITHUB_BRANCH])
+
+    return _git_with_lock(work)
+
 def git_pull_latest_hard():
     """
     On boot, force local files to match the latest repo state.
@@ -554,61 +610,7 @@ def build_weekly_waste_workbook(start_date: date, agg: dict):
 
     return wb
 
-# -- Persistence Storage for Waste Log
-def _authed_remote_url():
-    if not GITHUB_TOKEN:
-        return None
-    return f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
 
-_GIT_LOCK = "tmp/git_persist.lock"
-
-def _git_with_lock(fn):
-    with open(_GIT_LOCK, "w") as lock:
-        fcntl.flock(lock, fcntl.LOCK_EX)
-        return fn()
-    
-def git_setup_identity():
-    # Prevent commit failures due to missing identity
-    _git_run(["git", "config", "user.email", "render-bot@local"])
-    _git_run(["git", "config", "user.name", "Render Bot"])
-
-def git_setup_identity():
-    # Prevent commit failures due to missing identity
-    _git_run(["git", "config", "user.email", "render-bot@local"])
-    _git_run(["git", "config", "user.name", "Render Bot"])
-
-
-
-def git_commit_push_file(file_path: str, message: str):
-    """
-    Add/commit/push a single file. Safe when there are no changes.
-    Retries once if remote advanced (non-fast-forward).
-    """
-    def work():
-        if not GITHUB_TOKEN:
-            return
-
-        git_setup_identity()
-        git_set_origin_to_authed()
-
-        _git_run(["git", "add", file_path])
-
-        # If nothing staged, skip commit/push
-        diff = _git_run(["git", "diff", "--cached", "--name-only"])
-        if diff.returncode != 0 or not diff.stdout.strip():
-            return
-
-        _git_run(["git", "commit", "-m", message])
-
-        push = _git_run(["git", "push", "origin", GITHUB_BRANCH])
-        if push.returncode == 0:
-            return
-
-        # Retry once: pull/rebase then push
-        _git_run(["git", "pull", "--rebase", "origin", GITHUB_BRANCH])
-        _git_run(["git", "push", "origin", GITHUB_BRANCH])
-
-    return _git_with_lock(work)
 # ---------- Routes ----------
 
 @app.route("/", methods=["GET"])
