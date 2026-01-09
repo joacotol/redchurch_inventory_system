@@ -21,87 +21,68 @@ from openpyxl.chart import BarChart, Reference
 app = Flask(__name__)
 
 # -- Persistence Storage for Waste Log
-def _authed_remote_url():
-    if not GITHUB_TOKEN:
-        return None
-    return f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
+REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+GIT_BRANCH = os.getenv("GIT_BRANCH", "main")
+GIT_REMOTE = "origin"
+GIT_LOCK_PATH = "/tmp/git_persist.lock"  # ✅ fix: always exists on Render/Linux
 
-_GIT_LOCK = "/tmp/git_persist.lock"
+def _git(args):
+    """Run a git command in the repo folder (never prints token)."""
+    return subprocess.run(
+        ["git"] + args,
+        cwd=REPO_DIR,
+        capture_output=True,
+        text=True,
+    )
 
-def _git_with_lock(fn):
-    with open(_GIT_LOCK, "w") as lock:
-        fcntl.flock(lock, fcntl.LOCK_EX)
-        return fn()
-    
-def git_setup_identity():
-    # Prevent commit failures due to missing identity
-    _git_run(["git", "config", "user.email", "render-bot@local"])
-    _git_run(["git", "config", "user.name", "Render Bot"])
+def _ensure_git_identity():
+    # Prevents 'Please tell me who you are' commit failures
+    subprocess.run(["git", "config", "--global", "user.email", "bot@redchurch.local"], check=False)
+    subprocess.run(["git", "config", "--global", "user.name", "Redchurch Bot"], check=False)
 
-def git_setup_identity():
-    # Prevent commit failures due to missing identity
-    _git_run(["git", "config", "user.email", "render-bot@local"])
-    _git_run(["git", "config", "user.name", "Render Bot"])
+def _set_origin_with_token(token: str):
+    # Keep token out of logs; set remote URL silently
+    # NOTE: Repo slug is hardcoded to yours; change if needed.
+    repo = "joacotol/redchurch_inventory_system.git"
+    url = f"https://{token}@github.com/{repo}"
+    _git(["remote", "set-url", GIT_REMOTE, url])
 
-
-
-def git_commit_push_file(file_path: str, message: str):
+def git_pull_on_boot():
     """
-    Add/commit/push a single file. Safe when there are no changes.
-    Retries once if remote advanced (non-fast-forward).
+    Pull latest persisted JSON files after Render restarts/sleeps.
+    Uses /tmp lock to avoid multi-worker collisions.
     """
-    def work():
-        if not GITHUB_TOKEN:
-            return
+    token = os.getenv("GITHUB_TOKEN")  # ✅ prevents NameError
+    if not token:
+        print("[WARN] GITHUB_TOKEN not set; skipping git pull on boot")
+        return
 
-        git_setup_identity()
-        git_set_origin_to_authed()
+    try:
+        # lock file (works even across multiple gunicorn workers)
+        with open(GIT_LOCK_PATH, "w") as lock_file:
+            try:
+                import fcntl
+                fcntl.flock(lock_file, fcntl.LOCK_EX)
+            except Exception:
+                pass
 
-        _git_run(["git", "add", file_path])
+            _ensure_git_identity()
+            _set_origin_with_token(token)
 
-        # If nothing staged, skip commit/push
-        diff = _git_run(["git", "diff", "--cached", "--name-only"])
-        if diff.returncode != 0 or not diff.stdout.strip():
-            return
+            # Hard-sync with remote main
+            _git(["fetch", GIT_REMOTE, GIT_BRANCH])
+            _git(["reset", "--hard", f"{GIT_REMOTE}/{GIT_BRANCH}"])
+            print("[OK] git pull on boot completed")
+    except Exception as e:
+        print(f"[WARN] git pull failed on boot: {e}")
 
-        _git_run(["git", "commit", "-m", message])
-
-        push = _git_run(["git", "push", "origin", GITHUB_BRANCH])
-        if push.returncode == 0:
-            return
-
-        # Retry once: pull/rebase then push
-        _git_run(["git", "pull", "--rebase", "origin", GITHUB_BRANCH])
-        _git_run(["git", "push", "origin", GITHUB_BRANCH])
-
-    return _git_with_lock(work)
-
-def git_pull_latest_hard():
-    """
-    On boot, force local files to match the latest repo state.
-    This is what makes data survive Render sleep/wake.
-    """
-    def work():
-        if not GITHUB_TOKEN:
-            return
-        git_setup_identity()
-        git_set_origin_to_authed()
-        _git_run(["git", "fetch", "origin", GITHUB_BRANCH])
-        _git_run(["git", "checkout", GITHUB_BRANCH])
-        _git_run(["git", "reset", "--hard", f"origin/{GITHUB_BRANCH}"])
-    return _git_with_lock(work)
-
-# Pull latest persisted JSONs when the service starts (survives sleep/wake)
-try:
-    git_pull_latest_hard()
-except Exception as e:
-    print(f"[WARN] git pull failed on boot: {e}")
+# ✅ run once when app starts
+git_pull_on_boot()
 
 FILE_NAME = "catalog.json"
 orders = {}  # sku -> qty
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-GITHUB_REPO = os.getenv("GITHUB_REPO", "joacotol/redchurch_inventory_system")
-GITHUB_BRANCH = os.getenv("GITHUB_BRANCH", "main")
+
 
 TYPE_ORDER = [
     "Cups",
@@ -199,21 +180,31 @@ def display_full_date(d: date) -> str:
         return d.isoformat()
 
 def git_push_file_if_possible(file_path: str, message: str):
-    # Keeps your app from crashing if push fails in production
-    if not GITHUB_TOKEN:
+    token = os.getenv("GITHUB_TOKEN")  # ✅ prevents NameError
+    if not token:
         return
+
     try:
-        subprocess.run(["git", "add", file_path], check=False)
-        subprocess.run(["git", "commit", "-m", message], check=False)
-        subprocess.run(
-            [
-                "git",
-                "push",
-                f"https://{GITHUB_TOKEN}@github.com/joacotol/redchurch_inventory_system.git",
-                "main",
-            ],
-            check=False,
-        )
+        # same lock so push/pull won't collide
+        with open(GIT_LOCK_PATH, "w") as lock_file:
+            try:
+                import fcntl
+                fcntl.flock(lock_file, fcntl.LOCK_EX)
+            except Exception:
+                pass
+
+            _ensure_git_identity()
+            _set_origin_with_token(token)
+
+            _git(["add", file_path])
+
+            # Only commit if there are changes
+            status = _git(["status", "--porcelain"])
+            if not status.stdout.strip():
+                return
+
+            _git(["commit", "-m", message])
+            _git(["push", GIT_REMOTE, GIT_BRANCH])
     except Exception as e:
         print(f"[WARN] git push failed: {e}")
 
@@ -260,7 +251,7 @@ def save_waste_logs(logs: dict, commit_message: str):
         json.dump(logs, f, indent=2, ensure_ascii=False)
 
     try:
-        git_commit_push_file(WASTE_FILE, commit_message)
+        git_push_file_if_possible(WASTE_FILE, commit_message)
     except Exception as e:
         print(f"[WARN] Could not push waste logs: {e}")
 
