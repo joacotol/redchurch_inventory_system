@@ -1,5 +1,105 @@
 [
   {
+    "name": "(Cookie) Chocolate Chip",
+    "price": 3.0,
+    "active": true
+  },
+  {
+    "name": "(Croissant) Almond Croissant",
+    "price": 8.4,
+    "active": true
+  },
+  {
+    "name": "(Croissant) Pain au Chocolat",
+    "price": 6.15,
+    "active": true
+  },
+  {
+    "name": "(Croissant) Plain Butter",
+    "price": 4.85,
+    "active": true
+  },
+  {
+    "name": "(Danish) Goat Cheese",
+    "price": 7.85,
+    "active": true
+  },
+  {
+    "name": "(Danish) Iced Cinnamon",
+    "price": 6.15,
+    "active": true
+  },
+  {
+    "name": "(Danish) Sun-dried Tomato Mozzarella",
+    "price": 7.85,
+    "active": true
+  },
+  {
+    "name": "(Donut) Apple Fritter",
+    "price": 4.5,
+    "active": true
+  },
+  {
+    "name": "(Donut) Brownie Batter",
+    "price": 3.75,
+    "active": true
+  },
+  {
+    "name": "(Donut) Frosted Cranberry",
+    "price": 3.75,
+    "active": true
+  },
+  {
+    "name": "(Donut) London Fog Filled",
+    "price": 4.25,
+    "active": true
+  },
+  {
+    "name": "(Donut) Vanilla Sprinkle",
+    "price": 3.75,
+    "active": true
+  },
+  {
+    "name": "(Loaves) Chocolate Banana",
+    "price": 4.25,
+    "active": true
+  },
+  {
+    "name": "(Loaves) Iced Carrot",
+    "price": 4.25,
+    "active": true
+  },
+  {
+    "name": "(Muffin) Banana Walnut (V)",
+    "price": 4.75,
+    "active": true
+  },
+  {
+    "name": "(Muffin) Blueberry Crumble",
+    "price": 4.75,
+    "active": true
+  },
+  {
+    "name": "(Scone) Blueberry Earl Grey",
+    "price": 5.25,
+    "active": true
+  },
+  {
+    "name": "(Scone) Cheddar & Chive",
+    "price": 5.25,
+    "active": true
+  },
+  {
+    "name": "(Square) Caramel Sea Salt Brownie",
+    "price": 5.25,
+    "active": true
+  },
+  {
+    "name": "(Square) Magic Bar",
+    "price": 5.25,
+    "active": true
+  },
+  {
     "name": "(Square) Nanaimo",
     "price": 5.25,
     "active": true
