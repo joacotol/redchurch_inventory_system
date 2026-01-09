@@ -20,6 +20,21 @@ from openpyxl.chart import BarChart, Reference
 
 app = Flask(__name__)
 
+def git_pull_latest_hard():
+    """
+    On boot, force local files to match the latest repo state.
+    This is what makes data survive Render sleep/wake.
+    """
+    def work():
+        if not GITHUB_TOKEN:
+            return
+        git_setup_identity()
+        git_set_origin_to_authed()
+        _git_run(["git", "fetch", "origin", GITHUB_BRANCH])
+        _git_run(["git", "checkout", GITHUB_BRANCH])
+        _git_run(["git", "reset", "--hard", f"origin/{GITHUB_BRANCH}"])
+    return _git_with_lock(work)
+
 # Pull latest persisted JSONs when the service starts (survives sleep/wake)
 try:
     git_pull_latest_hard()
@@ -562,20 +577,7 @@ def git_setup_identity():
     _git_run(["git", "config", "user.email", "render-bot@local"])
     _git_run(["git", "config", "user.name", "Render Bot"])
 
-def git_pull_latest_hard():
-    """
-    On boot, force local files to match the latest repo state.
-    This is what makes data survive Render sleep/wake.
-    """
-    def work():
-        if not GITHUB_TOKEN:
-            return
-        git_setup_identity()
-        git_set_origin_to_authed()
-        _git_run(["git", "fetch", "origin", GITHUB_BRANCH])
-        _git_run(["git", "checkout", GITHUB_BRANCH])
-        _git_run(["git", "reset", "--hard", f"origin/{GITHUB_BRANCH}"])
-    return _git_with_lock(work)
+
 
 def git_commit_push_file(file_path: str, message: str):
     """
