@@ -42,12 +42,12 @@
   {
     "name": "(Donut) Brownie Batter",
     "price": 3.75,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Frosted Cranberry",
     "price": 3.75,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) London Fog Filled",
@@ -57,7 +57,7 @@
   {
     "name": "(Donut) Vanilla Sprinkle",
     "price": 3.75,
-    "active": true
+    "active": false
   },
   {
     "name": "(Loaves) Chocolate Banana",
