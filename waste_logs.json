@@ -231,5 +231,53 @@
       }
     ],
     "updated_at": "2026-01-10T00:32:22.498253Z"
+  },
+  "2026-01-09": {
+    "date": "2026-01-09",
+    "entries": [
+      {
+        "item": "(Danish) Sun-dried Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Croissant) Pain au Chocolat",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Donut) London Fog Filled",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      }
+    ],
+    "updated_at": "2026-01-10T00:36:24.879056Z"
   }
 }
