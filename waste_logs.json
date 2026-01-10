@@ -127,9 +127,15 @@
         "qty": 3,
         "reason": "Not sold",
         "unit_price": 3.75
+      },
+      {
+        "item": "(Donut) Strawberries & Cream",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.5
       }
     ],
-    "updated_at": "2026-01-10T22:43:39.277606Z"
+    "updated_at": "2026-01-10T23:02:45.176825Z"
   },
   "2026-01-07": {
     "date": "2026-01-07",
