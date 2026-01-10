@@ -45,6 +45,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Cinnamon Spice",
+    "price": 3.75,
+    "active": true
+  },
+  {
     "name": "(Donut) Frosted Cranberry",
     "price": 3.75,
     "active": false
