@@ -35,6 +35,11 @@
     "active": true
   },
   {
+    "name": "(Donut)",
+    "price": 0.0,
+    "active": false
+  },
+  {
     "name": "(Donut) Apple Fritter",
     "price": 4.5,
     "active": true
@@ -57,6 +62,11 @@
   {
     "name": "(Donut) London Fog Filled",
     "price": 4.25,
+    "active": true
+  },
+  {
+    "name": "(Donut) Strawberries & Cream",
+    "price": 4.5,
     "active": true
   },
   {
