@@ -73,12 +73,22 @@
             <td>
               <select class="waste-item">
                 <option value="">Select item</option>
-                {% for p in pastry_items %}
-                  <option value="{{ p }}" {% if item_val == p %}selected{% endif %}>
-                    {{ p }}
+
+                <!-- If this day has an item that's now inactive, keep it visible for history -->
+                {% if item_val and (item_val in inactive_items) %}
+                  <option value="{{ item_val }}" selected disabled>
+                    {{ item_val }} (inactive)
+                  </option>
+                {% endif %}
+
+                <!-- Only ACTIVE items are selectable -->
+                {% for p in pastry_items_active %}
+                  <option value="{{ p.name }}" {% if item_val == p.name %}selected{% endif %}>
+                    {{ p.name }}
                   </option>
                 {% endfor %}
               </select>
+
             </td>
 
             <td class="qty-col">
@@ -129,9 +139,9 @@
       <td>
         <select class="waste-item">
           <option value="">Select item</option>
-          {% for p in pastry_items %}
-            <option value="{{ p }}">{{ p }}</option>
-          {% endfor %}
+            {% for p in pastry_items_active %}
+              <option value="{{ p.name }}">{{ p.name }}</option>
+            {% endfor %}
         </select>
       </td>
 

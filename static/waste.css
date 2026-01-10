@@ -439,5 +439,28 @@ a.primary-btn, a.secondary-btn { text-decoration: none; display: inline-flex; }
   padding: 0 12px;
 }
 
+/* --- Manage Prices: Active toggle column --- */
+.active-col { width: 120px; text-align: center; }
+.active-toggle-wrap{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+.active-label{
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+#priceTable tr.is-inactive {
+  opacity: 0.45;
+}
+
+#priceTable tr.is-inactive .price-name,
+#priceTable tr.is-inactive .price-value {
+  background: #f6f6f6;
+}
+
 
 

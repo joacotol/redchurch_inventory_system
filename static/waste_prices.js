@@ -5,8 +5,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const statusEl = document.getElementById("pricesStatus");
   const tpl = document.getElementById("priceRowTemplate");
 
+  function syncInactiveStyle(tr) {
+    const cb = tr.querySelector(".price-active");
+    const isInactive = cb ? !cb.checked : false;
+    tr.classList.toggle("is-inactive", isInactive);
+  }
+
   function wireRow(tr) {
-    tr.querySelector(".remove-row")?.addEventListener("click", () => tr.remove());
+    // Dim archived rows
+    tr.querySelector(".price-active")?.addEventListener("change", () => syncInactiveStyle(tr));
+    syncInactiveStyle(tr);
+
+    // Archive instead of deleting (keeps history intact)
+    tr.querySelector(".remove-row")?.addEventListener("click", () => {
+      const name = tr.querySelector(".price-name")?.value?.trim() || "";
+      if (!name) {
+        tr.remove();
+        return;
+      }
+
+      const cb = tr.querySelector(".price-active");
+      if (cb) cb.checked = false;
+      syncInactiveStyle(tr);
+    });
   }
 
   rows?.querySelectorAll("tr").forEach(wireRow);
@@ -28,7 +49,18 @@ document.addEventListener("DOMContentLoaded", () => {
       const name = tr.querySelector(".price-name")?.value?.trim() || "";
       const priceRaw = tr.querySelector(".price-value")?.value;
       const price = priceRaw ? Number(priceRaw) : 0;
-      if (name) items.push({ name, price: Number.isFinite(price) ? price : 0 });
+
+      // ✅ NEW: read active checkbox (default true if missing)
+      const activeEl = tr.querySelector(".price-active");
+      const active = activeEl ? !!activeEl.checked : true;
+
+      if (name) {
+        items.push({
+          name,
+          price: Number.isFinite(price) ? price : 0,
+          active,
+        });
+      }
     });
 
     statusEl.textContent = "";
@@ -41,12 +73,13 @@ document.addEventListener("DOMContentLoaded", () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ items }),
       });
+
       if (!res.ok) throw new Error(await res.text());
       const data = await res.json();
-      statusEl.textContent = `Saved (${data.count || 0} items)`;
+      statusEl.textContent = `Saved (${data.count || 0} items) ✅`;
     } catch (e) {
       console.error(e);
-      statusEl.textContent = "Couldn’t save. Try again.";
+      statusEl.textContent = "Couldn’t save. Try again. ❌";
     } finally {
       saveBtn.disabled = false;
       saveBtn.textContent = "Save Prices";

@@ -7,6 +7,9 @@ from datetime import date, timedelta, datetime
 import subprocess
 import re
 import fcntl
+import base64
+import urllib.request
+import urllib.error
 
 from flask import jsonify
 
@@ -26,6 +29,107 @@ GIT_BRANCH = os.getenv("GIT_BRANCH", "main")
 GIT_REMOTE = "origin"
 GIT_LOCK_PATH = "/tmp/git_persist.lock"  # ✅ fix: always exists on Render/Linux
 
+# If Render doesn't include a .git folder at runtime (common), this fallback still persists
+# JSON files by committing directly through the GitHub Contents API.
+GITHUB_REPO_SLUG = os.getenv("GITHUB_REPO_SLUG", "joacotol/redchurch_inventory_system")
+PERSIST_FILES = ["waste_logs.json", "pastry_prices.json"]
+
+def _abs_path(rel_or_abs: str) -> str:
+    return rel_or_abs if os.path.isabs(rel_or_abs) else os.path.join(REPO_DIR, rel_or_abs)
+
+def _repo_has_git() -> bool:
+    return os.path.isdir(os.path.join(REPO_DIR, ".git"))
+
+def _github_api_json(method: str, url: str, body: dict | None = None):
+    """GitHub API helper (keeps token out of logs). Returns (status_code, json_dict)."""
+    token = os.getenv("GITHUB_TOKEN")
+    if not token:
+        return None, {"error": "GITHUB_TOKEN not set"}
+
+    data = None
+    if body is not None:
+        data = json.dumps(body).encode("utf-8")
+
+    req = urllib.request.Request(url, method=method)
+    req.add_header("Authorization", f"Bearer {token}")
+    req.add_header("Accept", "application/vnd.github+json")
+    req.add_header("User-Agent", "redchurch-inventory-system")
+    if data is not None:
+        req.add_header("Content-Type", "application/json")
+
+    try:
+        with urllib.request.urlopen(req, data=data, timeout=20) as resp:
+            raw = resp.read().decode("utf-8")
+            return resp.status, json.loads(raw) if raw else {}
+    except urllib.error.HTTPError as e:
+        try:
+            raw = e.read().decode("utf-8")
+            return e.code, json.loads(raw) if raw else {"error": "http error"}
+        except Exception:
+            return e.code, {"error": "http error"}
+    except Exception as e:
+        return None, {"error": str(e)}
+
+def _github_get_file_bytes(path: str, branch: str):
+    url = f"https://api.github.com/repos/{GITHUB_REPO_SLUG}/contents/{path}?ref={urllib.parse.quote(branch)}"
+    status, data = _github_api_json("GET", url)
+    if status != 200 or not isinstance(data, dict) or "content" not in data:
+        return None, None
+    content_b64 = data.get("content", "")
+    # GitHub may insert newlines
+    content_b64 = content_b64.replace("\n", "")
+    try:
+        return base64.b64decode(content_b64), data.get("sha")
+    except Exception:
+        return None, None
+
+def _github_put_file_bytes(path: str, branch: str, message: str, content_bytes: bytes):
+    # Need sha if file exists
+    _, sha = _github_get_file_bytes(path, branch)
+    url = f"https://api.github.com/repos/{GITHUB_REPO_SLUG}/contents/{path}"
+    body = {
+        "message": message,
+        "content": base64.b64encode(content_bytes).decode("ascii"),
+        "branch": branch,
+    }
+    if sha:
+        body["sha"] = sha
+    status, data = _github_api_json("PUT", url, body=body)
+    return status in (200, 201), status, data
+
+def _persist_pull_fallback(branch: str):
+    """Pull persisted JSON files directly from GitHub (works even without .git)."""
+    pulled_any = False
+    for fname in PERSIST_FILES:
+        b, _ = _github_get_file_bytes(fname, branch)
+        if b is None:
+            continue
+        try:
+            with open(_abs_path(fname), "wb") as f:
+                f.write(b)
+            pulled_any = True
+        except Exception as e:
+            print(f"[WARN] GitHub API pull failed writing {fname}: {e}")
+    if pulled_any:
+        print("[OK] GitHub API pull completed")
+    else:
+        print("[WARN] GitHub API pull did not retrieve any files")
+
+def _persist_push_fallback(file_path: str, message: str, branch: str):
+    """Push a single file through GitHub Contents API."""
+    try:
+        with open(_abs_path(file_path), "rb") as f:
+            content_bytes = f.read()
+    except Exception as e:
+        print(f"[WARN] GitHub API push could not read {file_path}: {e}")
+        return
+
+    ok, status, _ = _github_put_file_bytes(file_path, branch, message, content_bytes)
+    if ok:
+        print(f"[OK] Persisted {file_path} via GitHub API")
+    else:
+        print(f"[WARN] GitHub API push failed for {file_path} (status={status})")
+
 def _git(args):
     """Run a git command in the repo folder (never prints token)."""
     return subprocess.run(
@@ -42,9 +146,8 @@ def _ensure_git_identity():
 
 def _set_origin_with_token(token: str):
     # Keep token out of logs; set remote URL silently
-    # NOTE: Repo slug is hardcoded to yours; change if needed.
-    repo = "joacotol/redchurch_inventory_system.git"
-    url = f"https://{token}@github.com/{repo}"
+    # Uses GITHUB_REPO_SLUG (owner/repo)
+    url = f"https://{token}@github.com/{GITHUB_REPO_SLUG}.git"
     _git(["remote", "set-url", GIT_REMOTE, url])
 
 def git_pull_on_boot():
@@ -66,15 +169,28 @@ def git_pull_on_boot():
             except Exception:
                 pass
 
+            # If Render runtime doesn't include .git, fall back to GitHub API.
+            if not _repo_has_git():
+                _persist_pull_fallback(GIT_BRANCH)
+                return
+
             _ensure_git_identity()
             _set_origin_with_token(token)
 
-            # Hard-sync with remote main
-            _git(["fetch", GIT_REMOTE, GIT_BRANCH])
-            _git(["reset", "--hard", f"{GIT_REMOTE}/{GIT_BRANCH}"])
-            print("[OK] git pull on boot completed")
+            # Hard-sync with remote branch
+            r1 = _git(["fetch", GIT_REMOTE, GIT_BRANCH])
+            r2 = _git(["reset", "--hard", f"{GIT_REMOTE}/{GIT_BRANCH}"])
+            if r1.returncode == 0 and r2.returncode == 0:
+                print("[OK] git pull on boot completed")
+            else:
+                print("[WARN] git pull on boot failed; trying GitHub API fallback")
+                _persist_pull_fallback(GIT_BRANCH)
     except Exception as e:
-        print(f"[WARN] git pull failed on boot: {e}")
+        print(f"[WARN] git pull failed on boot: {e}; trying GitHub API fallback")
+        try:
+            _persist_pull_fallback(GIT_BRANCH)
+        except Exception:
+            pass
 
 # ✅ run once when app starts
 git_pull_on_boot()
@@ -120,14 +236,16 @@ WASTE_REASONS = [
 # ---------- Helpers ----------
 
 def load_catalog():
-    if not os.path.exists(FILE_NAME):
+    path = _abs_path(FILE_NAME)
+    if not os.path.exists(path):
         return []
-    with open(FILE_NAME, "r", encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 def save_catalog(catalog):
-    with open("catalog.json", "w") as f:
-        json.dump(catalog, f, indent=2)
+    # Keep file inside repo folder for persistence
+    with open(_abs_path("catalog.json"), "w", encoding="utf-8") as f:
+        json.dump(catalog, f, indent=2, ensure_ascii=False)
 
     subprocess.run(["git", "add", "catalog.json"])
     subprocess.run(["git", "commit", "-m", "Update catalog"])
@@ -193,44 +311,84 @@ def git_push_file_if_possible(file_path: str, message: str):
             except Exception:
                 pass
 
+            # If runtime doesn't include .git, persist via GitHub API.
+            if not _repo_has_git():
+                _persist_push_fallback(file_path, message, GIT_BRANCH)
+                return
+
             _ensure_git_identity()
             _set_origin_with_token(token)
 
-            _git(["add", file_path])
+            r_add = _git(["add", file_path])
+            if r_add.returncode != 0:
+                print(f"[WARN] git add failed for {file_path}; using GitHub API fallback")
+                _persist_push_fallback(file_path, message, GIT_BRANCH)
+                return
 
             # Only commit if there are changes
             status = _git(["status", "--porcelain"])
             if not status.stdout.strip():
                 return
 
-            _git(["commit", "-m", message])
-            _git(["push", GIT_REMOTE, GIT_BRANCH])
+            r_commit = _git(["commit", "-m", message])
+            r_push = _git(["push", GIT_REMOTE, GIT_BRANCH])
+
+            if r_push.returncode == 0:
+                print(f"[OK] Persisted {file_path} via git push")
+            else:
+                print(f"[WARN] git push failed for {file_path}; using GitHub API fallback")
+                _persist_push_fallback(file_path, message, GIT_BRANCH)
     except Exception as e:
-        print(f"[WARN] git push failed: {e}")
+        print(f"[WARN] git push failed: {e}; using GitHub API fallback")
+        try:
+            _persist_push_fallback(file_path, message, GIT_BRANCH)
+        except Exception:
+            pass
+
+def _to_bool(v, default=True):
+    if isinstance(v, bool):
+        return v
+    if v is None:
+        return default
+    if isinstance(v, (int, float)):
+        return bool(v)
+    s = str(v).strip().lower()
+    if s in ("true", "1", "yes", "y", "on"):
+        return True
+    if s in ("false", "0", "no", "n", "off"):
+        return False
+    return default
 
 def load_pastry_prices():
-    if not os.path.exists(PASTRY_PRICES_FILE):
-        # If file doesn't exist, start empty (or create default if you prefer)
+    path = _abs_path(PASTRY_PRICES_FILE)
+    if not os.path.exists(path):
         return []
 
-    with open(PASTRY_PRICES_FILE, "r", encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # Normalize
     cleaned = []
     for row in data if isinstance(data, list) else []:
         name = str(row.get("name", "")).strip()
+
         price = row.get("price", None)
         try:
-            price = float(price) if price is not None else None
+            price = float(price) if price is not None else 0.0
         except Exception:
-            price = None
+            price = 0.0
+
+        active = _to_bool(row.get("active", True), default=True)
+
         if name:
-            cleaned.append({"name": name, "price": price if price is not None else 0.0})
+            cleaned.append({
+                "name": name,
+                "price": round(price, 2),
+                "active": active
+            })
     return cleaned
 
 def save_pastry_prices(items: list):
-    with open(PASTRY_PRICES_FILE, "w", encoding="utf-8") as f:
+    with open(_abs_path(PASTRY_PRICES_FILE), "w", encoding="utf-8") as f:
         json.dump(items, f, indent=2, ensure_ascii=False)
     git_push_file_if_possible(PASTRY_PRICES_FILE, "Update pastry prices")
 
@@ -241,13 +399,14 @@ def pastry_items_and_price_map():
     return names, price_map
 
 def load_waste_logs():
-    if not os.path.exists(WASTE_FILE):
+    path = _abs_path(WASTE_FILE)
+    if not os.path.exists(path):
         return {}
-    with open(WASTE_FILE, "r", encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 def save_waste_logs(logs: dict, commit_message: str):
-    with open(WASTE_FILE, "w", encoding="utf-8") as f:
+    with open(_abs_path(WASTE_FILE), "w", encoding="utf-8") as f:
         json.dump(logs, f, indent=2, ensure_ascii=False)
 
     try:
@@ -757,7 +916,12 @@ def order_summary():
 @app.route("/waste", methods=["GET"])
 def waste_log():
     logs = load_waste_logs()
-    pastry_items, price_map = pastry_items_and_price_map()
+    items = load_pastry_prices()
+    inactive_items = set(x["name"] for x in items if not x.get("active", True))
+    # Only ACTIVE items should be selectable in the daily log.
+    # Inactive items stay in the file for history, but won't appear as choices.
+    pastry_items_active = [x for x in items if x.get("active", True)]
+
 
     requested = (request.args.get("date") or "").strip()
     selected_date = parse_iso_date(requested) if requested else date.today()
@@ -779,7 +943,8 @@ def waste_log():
         "waste.html",
         today=today_display,
         today_iso=selected_iso,
-        pastry_items=pastry_items,
+        inactive_items=inactive_items,
+        pastry_items_active=pastry_items_active,
         waste_reasons=WASTE_REASONS,
         initial_rows=entries,
         date_options=date_options,
@@ -977,13 +1142,21 @@ def waste_prices_save():
         name = str(r.get("name", "")).strip()
         if not name:
             continue
+
         try:
             price = float(r.get("price", 0))
         except Exception:
             price = 0.0
         if price < 0:
             price = 0.0
-        cleaned.append({"name": name, "price": round(price, 2)})
+
+        active = _to_bool(r.get("active", True), default=True)
+
+        cleaned.append({
+            "name": name,
+            "price": round(price, 2),
+            "active": active
+        })
 
     # Optional: sort A→Z
     cleaned.sort(key=lambda x: x["name"].lower())
