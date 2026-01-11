@@ -130,12 +130,18 @@
       },
       {
         "item": "(Donut) Strawberries & Cream",
-        "qty": 4,
+        "qty": 2,
         "reason": "Not sold",
         "unit_price": 4.5
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 3.75
       }
     ],
-    "updated_at": "2026-01-10T23:02:45.176825Z"
+    "updated_at": "2026-01-11T18:10:44.391752Z"
   },
   "2026-01-07": {
     "date": "2026-01-07",
