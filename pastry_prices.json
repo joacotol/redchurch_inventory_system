@@ -35,11 +35,6 @@
     "active": true
   },
   {
-    "name": "(Donut)",
-    "price": 0.0,
-    "active": false
-  },
-  {
     "name": "(Donut) Apple Fritter",
     "price": 4.5,
     "active": true
@@ -48,6 +43,11 @@
     "name": "(Donut) Brownie Batter",
     "price": 3.75,
     "active": false
+  },
+  {
+    "name": "(Donut) Cereal Milk",
+    "price": 3.75,
+    "active": true
   },
   {
     "name": "(Donut) Cinnamon Spice",
@@ -72,7 +72,7 @@
   {
     "name": "(Donut) Vanilla Sprinkle",
     "price": 3.75,
-    "active": true
+    "active": false
   },
   {
     "name": "(Loaves) Chocolate Banana",
