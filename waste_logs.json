@@ -514,5 +514,65 @@
       }
     ],
     "updated_at": "2026-01-13T22:57:16.977897Z"
+  },
+  "2026-01-14": {
+    "date": "2026-01-14",
+    "entries": [
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Danish) Sun-dried Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Croissant) Pain au Chocolat",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 8.4
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Donut) Cereal Milk",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Donut) Strawberries & Cream",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      }
+    ],
+    "updated_at": "2026-01-14T23:00:44.543507Z"
   }
 }
