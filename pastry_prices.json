@@ -50,6 +50,11 @@
     "active": true
   },
   {
+    "name": "(Donut) Cheesecake Brownie",
+    "price": 4.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Cinnamon Spice",
     "price": 3.75,
     "active": true
@@ -60,8 +65,18 @@
     "active": false
   },
   {
+    "name": "(Donut) Lavender Lemon",
+    "price": 3.75,
+    "active": true
+  },
+  {
     "name": "(Donut) London Fog Filled",
     "price": 4.25,
+    "active": true
+  },
+  {
+    "name": "(Donut) Raspberry Lemon Curd Cake Bar",
+    "price": 0.0,
     "active": true
   },
   {
