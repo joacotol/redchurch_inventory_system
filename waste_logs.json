@@ -754,5 +754,77 @@
       }
     ],
     "updated_at": "2026-01-17T22:36:02.050510Z"
+  },
+  "2026-01-18": {
+    "date": "2026-01-18",
+    "entries": [
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Donut) Lavender Lemon",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Donut) Raspberry Lemon Curd Cake Bar",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Donut) Cheesecake Brownie",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 8.4
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Croissant) Pain au Chocolat",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      }
+    ],
+    "updated_at": "2026-01-18T21:44:58.166574Z"
   }
 }
