@@ -47,7 +47,7 @@
   {
     "name": "(Donut) Cereal Milk",
     "price": 3.75,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cheesecake Brownie",
@@ -72,7 +72,7 @@
   {
     "name": "(Donut) London Fog Filled",
     "price": 4.25,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Raspberry Lemon Curd Cake Bar",
@@ -82,7 +82,7 @@
   {
     "name": "(Donut) Strawberries & Cream",
     "price": 4.5,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
