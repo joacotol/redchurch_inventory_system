@@ -1042,5 +1042,71 @@
       }
     ],
     "updated_at": "2026-01-21T22:55:51.201825Z"
+  },
+  "2026-01-22": {
+    "date": "2026-01-22",
+    "entries": [
+      {
+        "item": "(Donut) Raspberry Lemon Curd Cake Bar",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Donut) Lavender Lemon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Donut) Cheesecake Brownie",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      },
+      {
+        "item": "(Croissant) Pain au Chocolat",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      }
+    ],
+    "updated_at": "2026-01-22T23:05:56.870894Z"
   }
 }
