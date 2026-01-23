@@ -1108,5 +1108,41 @@
       }
     ],
     "updated_at": "2026-01-22T23:06:00.879386Z"
+  },
+  "2026-01-23": {
+    "date": "2026-01-23",
+    "entries": [
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Danish) Sun-dried Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      }
+    ],
+    "updated_at": "2026-01-23T23:36:10.054380Z"
   }
 }
