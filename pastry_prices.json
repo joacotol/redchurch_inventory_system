@@ -75,6 +75,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Pink Lady",
+    "price": 3.75,
+    "active": true
+  },
+  {
     "name": "(Donut) Raspberry Lemon Curd Cake Bar",
     "price": 4.25,
     "active": true
@@ -85,9 +90,19 @@
     "active": false
   },
   {
+    "name": "(Donut) Vanilla Bean",
+    "price": 3.5,
+    "active": true
+  },
+  {
     "name": "(Donut) Vanilla Sprinkle",
     "price": 3.75,
     "active": false
+  },
+  {
+    "name": "(Donut) Wildberry Poptart",
+    "price": 4.0,
+    "active": true
   },
   {
     "name": "(Loaves) Chocolate Banana",
