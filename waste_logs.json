@@ -1210,5 +1210,83 @@
       }
     ],
     "updated_at": "2026-01-24T22:09:58.995581Z"
+  },
+  "2026-01-25": {
+    "date": "2026-01-25",
+    "entries": [
+      {
+        "item": "(Croissant) Pain Suisse",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 8.0
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 8.4
+      },
+      {
+        "item": "(Square) Magic Bar",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Square) Nanaimo",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Square) Caramel Sea Salt Brownie",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Danish) Sun-dried Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      }
+    ],
+    "updated_at": "2026-01-25T20:15:24.975189Z"
   }
 }
