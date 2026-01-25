@@ -15,6 +15,11 @@
     "active": true
   },
   {
+    "name": "(Croissant) Pain Suisse",
+    "price": 8.0,
+    "active": true
+  },
+  {
     "name": "(Croissant) Plain Butter",
     "price": 4.85,
     "active": true
