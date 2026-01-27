@@ -1333,8 +1333,14 @@
         "qty": 4,
         "reason": "Not sold",
         "unit_price": 3.75
+      },
+      {
+        "item": "(Donut) Butterfingers Bullseye",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.25
       }
     ],
-    "updated_at": "2026-01-27T22:51:33.073763Z"
+    "updated_at": "2026-01-27T22:52:36.093227Z"
   }
 }
