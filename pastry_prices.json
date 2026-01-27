@@ -50,6 +50,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Butterfingers Bullseye",
+    "price": 4.25,
+    "active": true
+  },
+  {
     "name": "(Donut) Cereal Milk",
     "price": 3.75,
     "active": false
