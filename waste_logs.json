@@ -1342,5 +1342,71 @@
       }
     ],
     "updated_at": "2026-01-27T22:52:36.093227Z"
+  },
+  "2026-01-29": {
+    "date": "2026-01-29",
+    "entries": [
+      {
+        "item": "(Croissant) Pain Suisse",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 8.0
+      },
+      {
+        "item": "(Donut) Butterfingers Bullseye",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Donut) Vanilla Bean",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 3.5
+      },
+      {
+        "item": "(Donut) Pink Lady",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Donut) Wildberry Poptart",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      }
+    ],
+    "updated_at": "2026-01-29T00:42:37.729012Z"
   }
 }
