@@ -1468,5 +1468,23 @@
       }
     ],
     "updated_at": "2026-01-30T23:36:04.077358Z"
+  },
+  "2026-01-31": {
+    "date": "2026-01-31",
+    "entries": [
+      {
+        "item": "(Donut) Butterfingers Bullseye",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Donut) Vanilla Bean",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 3.5
+      }
+    ],
+    "updated_at": "2026-01-31T21:58:45.842516Z"
   }
 }
