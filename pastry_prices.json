@@ -100,6 +100,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Strawberry Kiwi",
+    "price": 4.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Vanilla Bean",
     "price": 3.5,
     "active": true
