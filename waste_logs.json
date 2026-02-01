@@ -1522,5 +1522,53 @@
       }
     ],
     "updated_at": "2026-01-31T22:01:32.222929Z"
+  },
+  "2026-02-01": {
+    "date": "2026-02-01",
+    "entries": [
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Croissant) Pain Suisse",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 8.0
+      },
+      {
+        "item": "(Donut) Butterfingers Bullseye",
+        "qty": 6,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Donut) Strawberry Kiwi",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      }
+    ],
+    "updated_at": "2026-02-01T22:22:43.903706Z"
   }
 }
