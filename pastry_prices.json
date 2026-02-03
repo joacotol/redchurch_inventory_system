@@ -62,12 +62,12 @@
   {
     "name": "(Donut) Cheesecake Brownie",
     "price": 4.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cinnamon Spice",
     "price": 3.75,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Frosted Cranberry",
@@ -77,7 +77,7 @@
   {
     "name": "(Donut) Lavender Lemon",
     "price": 3.75,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) London Fog Filled",
@@ -87,7 +87,7 @@
   {
     "name": "(Donut) Pink Lady",
     "price": 3.75,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Raspberry Lemon Curd Cake Bar",
@@ -117,7 +117,7 @@
   {
     "name": "(Donut) Wildberry Poptart",
     "price": 4.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Loaves) Chocolate Banana",
