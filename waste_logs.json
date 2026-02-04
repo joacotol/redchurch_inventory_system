@@ -1714,5 +1714,83 @@
       }
     ],
     "updated_at": "2026-02-03T22:34:26.154537Z"
+  },
+  "2026-02-04": {
+    "date": "2026-02-04",
+    "entries": [
+      {
+        "item": "(Donut) Butterfingers Bullseye",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Donut) Strawberry Kiwi",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      },
+      {
+        "item": "(Donut) Vanilla Bean",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 3.5
+      },
+      {
+        "item": "(Donut) Raspberry Lemon Curd Cake Bar",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.75
+      },
+      {
+        "item": "(Loaves) Iced Carrot",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 8.4
+      },
+      {
+        "item": "(Danish) Sun-dried Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 6.15
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Croissant) Plain Butter",
+        "qty": 8,
+        "reason": "Not sold",
+        "unit_price": 4.85
+      }
+    ],
+    "updated_at": "2026-02-04T23:15:21.193993Z"
   }
 }
