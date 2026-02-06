@@ -1792,5 +1792,17 @@
       }
     ],
     "updated_at": "2026-02-04T23:15:21.193993Z"
+  },
+  "2026-02-05": {
+    "date": "2026-02-05",
+    "entries": [
+      {
+        "item": "(Cookie) Chocolate Chip",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 3.0
+      }
+    ],
+    "updated_at": "2026-02-06T02:33:21.009132Z"
   }
 }
