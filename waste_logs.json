@@ -1975,8 +1975,20 @@
         "qty": 4,
         "reason": "Not sold",
         "unit_price": 4.0
+      },
+      {
+        "item": "(Donut) Cupids Sprinkle",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Donut)Raspberry Brûlée",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.25
       }
     ],
-    "updated_at": "2026-02-07T21:35:47.482464Z"
+    "updated_at": "2026-02-07T21:37:42.225470Z"
   }
 }
