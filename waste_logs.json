@@ -1876,5 +1876,65 @@
       }
     ],
     "updated_at": "2026-02-06T02:38:15.126247Z"
+  },
+  "2026-02-06": {
+    "date": "2026-02-06",
+    "entries": [
+      {
+        "item": "(Donut) Strawberry Kiwi",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Loaves) Iced Carrot",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Croissant) Pain Suisse",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 8.0
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Danish) Sun-dried Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 7.85
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 5.25
+      },
+      {
+        "item": "(Croissant) Plain Butter",
+        "qty": 12,
+        "reason": "Not sold",
+        "unit_price": 4.85
+      }
+    ],
+    "updated_at": "2026-02-07T00:00:04.481821Z"
   }
 }
