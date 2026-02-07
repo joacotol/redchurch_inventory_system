@@ -1,42 +1,42 @@
 [
   {
     "name": "(Cookie) Chocolate Chip",
-    "price": 3.0,
+    "price": 3.25,
     "active": true
   },
   {
     "name": "(Croissant) Almond Croissant",
-    "price": 8.4,
+    "price": 2.95,
     "active": true
   },
   {
     "name": "(Croissant) Pain au Chocolat",
-    "price": 6.15,
+    "price": 1.85,
     "active": true
   },
   {
     "name": "(Croissant) Pain Suisse",
-    "price": 8.0,
+    "price": 2.95,
     "active": true
   },
   {
     "name": "(Croissant) Plain Butter",
-    "price": 4.85,
+    "price": 1.45,
     "active": true
   },
   {
     "name": "(Danish) Goat Cheese",
-    "price": 7.85,
+    "price": 2.75,
     "active": true
   },
   {
     "name": "(Danish) Iced Cinnamon",
-    "price": 6.15,
+    "price": 1.95,
     "active": true
   },
   {
     "name": "(Danish) Sun-dried Tomato Mozzarella",
-    "price": 7.85,
+    "price": 2.75,
     "active": true
   },
   {
@@ -52,7 +52,7 @@
   {
     "name": "(Donut) Butterfingers Bullseye",
     "price": 4.25,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cereal Milk",
@@ -67,7 +67,7 @@
   {
     "name": "(Donut) Cinnamon Spice",
     "price": 3.75,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Frosted Cranberry",
@@ -107,7 +107,7 @@
   {
     "name": "(Donut) Vanilla Bean",
     "price": 3.5,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
@@ -131,22 +131,22 @@
   },
   {
     "name": "(Muffin) Banana Walnut (V)",
-    "price": 4.75,
+    "price": 1.65,
     "active": true
   },
   {
     "name": "(Muffin) Blueberry Crumble",
-    "price": 4.75,
+    "price": 1.65,
     "active": true
   },
   {
     "name": "(Scone) Blueberry Earl Grey",
-    "price": 5.25,
+    "price": 1.8,
     "active": true
   },
   {
     "name": "(Scone) Cheddar & Chive",
-    "price": 5.25,
+    "price": 1.8,
     "active": true
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "name": "(Square) Magic Bar",
-    "price": 5.25,
+    "price": 0.0,
     "active": true
   },
   {
