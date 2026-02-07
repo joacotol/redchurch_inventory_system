@@ -70,6 +70,11 @@
     "active": true
   },
   {
+    "name": "(Donut) Cupids Sprinkle",
+    "price": 3.75,
+    "active": true
+  },
+  {
     "name": "(Donut) Frosted Cranberry",
     "price": 3.75,
     "active": false
@@ -118,6 +123,11 @@
     "name": "(Donut) Wildberry Poptart",
     "price": 4.0,
     "active": false
+  },
+  {
+    "name": "(Donut)Raspberry Brûlée",
+    "price": 4.25,
+    "active": true
   },
   {
     "name": "(Loaves) Chocolate Banana",
