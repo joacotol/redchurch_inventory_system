@@ -2047,8 +2047,26 @@
         "qty": 4,
         "reason": "Not sold",
         "unit_price": 1.45
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Donut) Strawberry Kiwi",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      },
+      {
+        "item": "(Donut) Cupids Sprinkle",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 3.75
       }
     ],
-    "updated_at": "2026-02-08T22:05:51.173308Z"
+    "updated_at": "2026-02-08T22:11:09.934665Z"
   }
 }
