@@ -2068,5 +2068,95 @@
       }
     ],
     "updated_at": "2026-02-08T22:11:09.934665Z"
+  },
+  "2026-02-09": {
+    "date": "2026-02-09",
+    "entries": [
+      {
+        "item": "(Danish) Sun-dried Tomato Mozzarella",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Croissant) Pain Suisse",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Loaves) Iced Carrot",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Donut) Cupids Sprinkle",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Donut)Raspberry Brûlée",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Donut) Strawberry Kiwi",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      }
+    ],
+    "updated_at": "2026-02-09T23:03:03.639252Z"
   }
 }
