@@ -2158,5 +2158,65 @@
       }
     ],
     "updated_at": "2026-02-09T23:04:08.039960Z"
+  },
+  "2026-02-10": {
+    "date": "2026-02-10",
+    "entries": [
+      {
+        "item": "(Donut) Strawberry Kiwi",
+        "qty": 6,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Donut) Cupids Sprinkle",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Sun-dried Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      }
+    ],
+    "updated_at": "2026-02-10T23:19:47.152658Z"
   }
 }
