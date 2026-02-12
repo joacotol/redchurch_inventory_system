@@ -25,6 +25,11 @@
     "active": true
   },
   {
+    "name": "(Croissnt) Churro Cruffin",
+    "price": 5.65,
+    "active": true
+  },
+  {
     "name": "(Danish) Goat Cheese",
     "price": 2.75,
     "active": true
@@ -171,7 +176,7 @@
   },
   {
     "name": "(Square) Magic Bar",
-    "price": 0.0,
+    "price": 5.25,
     "active": true
   },
   {
