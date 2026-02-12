@@ -2160,25 +2160,25 @@
         "item": "(Donut) Strawberry Kiwi",
         "qty": 6,
         "reason": "Not sold",
-        "unit_price": 4.0
+        "unit_price": 0.0
       },
       {
         "item": "(Donut) Cinnamon Spice",
         "qty": 5,
         "reason": "Not sold",
-        "unit_price": 3.75
+        "unit_price": 0.0
       },
       {
         "item": "(Donut) Cupids Sprinkle",
         "qty": 2,
         "reason": "Not sold",
-        "unit_price": 3.75
+        "unit_price": 0.0
       },
       {
         "item": "(Donut) Apple Fritter",
         "qty": 3,
         "reason": "Not sold",
-        "unit_price": 4.5
+        "unit_price": 0.0
       },
       {
         "item": "(Croissant) Almond Croissant",
@@ -2211,7 +2211,7 @@
         "unit_price": 1.8
       }
     ],
-    "updated_at": "2026-02-10T23:19:47.152658Z"
+    "updated_at": "2026-02-12T02:57:23.469392Z"
   },
   "2026-02-11": {
     "date": "2026-02-11",
