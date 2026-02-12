@@ -1,12 +1,7 @@
 [
   {
     "name": "(Cookie) Chocolate Chip",
-    "price": 3.25,
-    "active": true
-  },
-  {
-    "name": "(Croissant t) Churro Cruffin",
-    "price": 7.85,
+    "price": 0.0,
     "active": true
   },
   {
@@ -15,14 +10,19 @@
     "active": true
   },
   {
+    "name": "(Croissant) Churro Cruffin",
+    "price": 2.95,
+    "active": true
+  },
+  {
     "name": "(Croissant) Pain au Chocolat",
     "price": 1.85,
-    "active": true
+    "active": false
   },
   {
     "name": "(Croissant) Pain Suisse",
     "price": 2.95,
-    "active": true
+    "active": false
   },
   {
     "name": "(Croissant) Plain Butter",
@@ -37,7 +37,7 @@
   {
     "name": "(Danish) Iced Cinnamon",
     "price": 1.95,
-    "active": true
+    "active": false
   },
   {
     "name": "(Danish) Sun-dried Tomato Mozzarella",
@@ -46,7 +46,7 @@
   },
   {
     "name": "(Donut) Apple Fritter",
-    "price": 4.5,
+    "price": 0.0,
     "active": true
   },
   {
@@ -56,83 +56,83 @@
   },
   {
     "name": "(Donut) Butterfingers Bullseye",
-    "price": 4.25,
+    "price": 0.0,
     "active": false
   },
   {
     "name": "(Donut) Cereal Milk",
-    "price": 3.75,
+    "price": 0.0,
     "active": false
   },
   {
     "name": "(Donut) Cheesecake Brownie",
-    "price": 4.0,
+    "price": 0.0,
     "active": false
   },
   {
     "name": "(Donut) Cinnamon Spice",
-    "price": 3.75,
+    "price": 0.0,
     "active": true
   },
   {
     "name": "(Donut) Cupids Sprinkle",
-    "price": 3.75,
+    "price": 0.0,
     "active": true
   },
   {
     "name": "(Donut) Frosted Cranberry",
-    "price": 3.75,
+    "price": 0.0,
     "active": false
   },
   {
     "name": "(Donut) Lavender Lemon",
-    "price": 3.75,
+    "price": 0.0,
     "active": false
   },
   {
     "name": "(Donut) London Fog Filled",
-    "price": 4.25,
+    "price": 0.0,
     "active": false
   },
   {
     "name": "(Donut) Pink Lady",
-    "price": 3.75,
+    "price": 0.0,
     "active": false
   },
   {
     "name": "(Donut) Raspberry Lemon Curd Cake Bar",
-    "price": 4.25,
+    "price": 0.0,
+    "active": true
+  },
+  {
+    "name": "(Donut) Raspberry Rose Brûlée",
+    "price": 0.0,
     "active": true
   },
   {
     "name": "(Donut) Strawberries & Cream",
-    "price": 4.5,
+    "price": 0.0,
     "active": false
   },
   {
     "name": "(Donut) Strawberry Kiwi",
-    "price": 4.0,
+    "price": 0.0,
     "active": true
   },
   {
     "name": "(Donut) Vanilla Bean",
-    "price": 3.5,
+    "price": 0.0,
     "active": false
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
-    "price": 3.75,
+    "price": 0.0,
     "active": false
   },
   {
     "name": "(Donut) Wildberry Poptart",
-    "price": 4.0,
+    "price": 0.0,
     "active": false
-  },
-  {
-    "name": "(Donut)Raspberry Brûlée",
-    "price": 4.25,
-    "active": true
   },
   {
     "name": "(Loaves) Chocolate Banana",
@@ -152,6 +152,11 @@
   {
     "name": "(Muffin) Blueberry Crumble",
     "price": 1.65,
+    "active": false
+  },
+  {
+    "name": "(Muffin) Toffee Chocolate",
+    "price": 1.95,
     "active": true
   },
   {
@@ -166,22 +171,22 @@
   },
   {
     "name": "(Square) Caramel Sea Salt Brownie",
-    "price": 5.25,
+    "price": 2.0,
     "active": true
   },
   {
     "name": "(Square) Lemon Oat Bar",
-    "price": 5.25,
+    "price": 2.0,
     "active": true
   },
   {
     "name": "(Square) Magic Bar",
-    "price": 5.25,
+    "price": 2.0,
     "active": true
   },
   {
     "name": "(Square) Nanaimo",
-    "price": 5.25,
+    "price": 2.0,
     "active": true
   }
 ]
