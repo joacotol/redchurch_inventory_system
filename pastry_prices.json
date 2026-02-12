@@ -5,6 +5,11 @@
     "active": true
   },
   {
+    "name": "(Cookie) Matcha White Chocolate",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Croissant) Almond Croissant",
     "price": 2.95,
     "active": true
@@ -136,12 +141,12 @@
   },
   {
     "name": "(Loaves) Chocolate Banana",
-    "price": 4.25,
+    "price": 1.58,
     "active": true
   },
   {
     "name": "(Loaves) Iced Carrot",
-    "price": 4.25,
+    "price": 1.58,
     "active": true
   },
   {
