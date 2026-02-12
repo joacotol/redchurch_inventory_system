@@ -2218,5 +2218,53 @@
       }
     ],
     "updated_at": "2026-02-10T23:19:47.152658Z"
+  },
+  "2026-02-11": {
+    "date": "2026-02-11",
+    "entries": [
+      {
+        "item": "(Donut) Strawberry Kiwi",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Sun-dried Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      }
+    ],
+    "updated_at": "2026-02-12T02:44:33.021408Z"
   }
 }
