@@ -2220,7 +2220,7 @@
         "item": "(Donut) Strawberry Kiwi",
         "qty": 2,
         "reason": "Not sold",
-        "unit_price": 4.0
+        "unit_price": 0.0
       },
       {
         "item": "(Danish) Goat Cheese",
@@ -2250,21 +2250,15 @@
         "item": "(Donut) Cinnamon Spice",
         "qty": 2,
         "reason": "Not sold",
-        "unit_price": 3.75
+        "unit_price": 0.0
       },
       {
         "item": "(Donut) Apple Fritter",
         "qty": 2,
         "reason": "Not sold",
-        "unit_price": 4.5
-      },
-      {
-        "item": "(Croissant t) Churro Cruffin",
-        "qty": 3,
-        "reason": "Not sold",
-        "unit_price": 7.85
+        "unit_price": 0.0
       }
     ],
-    "updated_at": "2026-02-12T02:47:54.757704Z"
+    "updated_at": "2026-02-12T02:57:33.880897Z"
   }
 }
