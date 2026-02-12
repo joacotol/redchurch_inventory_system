@@ -2266,5 +2266,47 @@
       }
     ],
     "updated_at": "2026-02-12T03:00:45.176340Z"
+  },
+  "2026-02-12": {
+    "date": "2026-02-12",
+    "entries": [
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Croissant) Plain Butter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.45
+      },
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      }
+    ],
+    "updated_at": "2026-02-12T23:03:09.337653Z"
   }
 }
