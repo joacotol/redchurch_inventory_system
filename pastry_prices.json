@@ -5,6 +5,11 @@
     "active": true
   },
   {
+    "name": "(Croissant t) Churro Cruffin",
+    "price": 7.85,
+    "active": true
+  },
+  {
     "name": "(Croissant) Almond Croissant",
     "price": 2.95,
     "active": true
@@ -22,11 +27,6 @@
   {
     "name": "(Croissant) Plain Butter",
     "price": 1.45,
-    "active": true
-  },
-  {
-    "name": "(Croissnt) Churro Cruffin",
-    "price": 7.85,
     "active": true
   },
   {
