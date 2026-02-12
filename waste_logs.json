@@ -2263,8 +2263,14 @@
         "qty": 2,
         "reason": "Not sold",
         "unit_price": 4.5
+      },
+      {
+        "item": "(Croissant t) Churro Cruffin",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 7.85
       }
     ],
-    "updated_at": "2026-02-12T02:44:33.021408Z"
+    "updated_at": "2026-02-12T02:47:54.757704Z"
   }
 }
