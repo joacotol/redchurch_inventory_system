@@ -2308,5 +2308,35 @@
       }
     ],
     "updated_at": "2026-02-12T23:03:09.337653Z"
+  },
+  "2026-02-13": {
+    "date": "2026-02-13",
+    "entries": [
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      }
+    ],
+    "updated_at": "2026-02-13T23:00:17.323328Z"
   }
 }
