@@ -87,7 +87,7 @@
   {
     "name": "(Donut) Cinnamon Spice",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cupids Sprinkle",
@@ -122,7 +122,7 @@
   {
     "name": "(Donut) Raspberry Lemon Curd Cake Bar",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Raspberry Rose Brûlée",
@@ -137,7 +137,7 @@
   {
     "name": "(Donut) Strawberry Kiwi",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Bean",
