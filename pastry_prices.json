@@ -75,6 +75,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Cherry Cream bar 4.50",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Cinnamon Spice",
     "price": 0.0,
     "active": true
