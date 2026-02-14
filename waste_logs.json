@@ -2338,5 +2338,65 @@
       }
     ],
     "updated_at": "2026-02-13T23:00:17.323328Z"
+  },
+  "2026-02-14": {
+    "date": "2026-02-14",
+    "entries": [
+      {
+        "item": "(Donut) Cherry Brownie Fritter",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Raspberry Rose Brûlée",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cherry Cream bar",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Donut) Cupids Sprinkle",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      }
+    ],
+    "updated_at": "2026-02-14T22:09:07.515252Z"
   }
 }
