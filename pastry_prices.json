@@ -75,6 +75,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Cherry Brownie Fritter",
+    "price": 4.5,
+    "active": true
+  },
+  {
     "name": "(Donut) Cherry Cream bar",
     "price": 4.5,
     "active": true
