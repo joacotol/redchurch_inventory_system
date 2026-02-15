@@ -110,6 +110,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Matcha Lychee",
+    "price": 3.75,
+    "active": true
+  },
+  {
     "name": "(Donut) Matcha Lychee (V)",
     "price": 0.0,
     "active": true
