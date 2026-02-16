@@ -2446,5 +2446,35 @@
       }
     ],
     "updated_at": "2026-02-15T22:05:13.053109Z"
+  },
+  "2026-02-16": {
+    "date": "2026-02-16",
+    "entries": [
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Loaves) Iced Carrot",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      }
+    ],
+    "updated_at": "2026-02-16T22:56:54.903061Z"
   }
 }
