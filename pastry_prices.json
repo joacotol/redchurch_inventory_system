@@ -92,7 +92,7 @@
   {
     "name": "(Donut) Cupids Sprinkle",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Frosted Cranberry",
@@ -111,13 +111,13 @@
   },
   {
     "name": "(Donut) Matcha Lychee",
-    "price": 3.75,
+    "price": 0.0,
     "active": true
   },
   {
     "name": "(Donut) Matcha Lychee (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Pink Lady",
@@ -132,7 +132,7 @@
   {
     "name": "(Donut) Raspberry Rose Brûlée",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Strawberries & Cream",
