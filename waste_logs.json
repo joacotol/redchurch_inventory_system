@@ -2476,5 +2476,65 @@
       }
     ],
     "updated_at": "2026-02-16T22:56:54.903061Z"
+  },
+  "2026-02-17": {
+    "date": "2026-02-17",
+    "entries": [
+      {
+        "item": "(Croissant) Plain Butter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.45
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Donut) Vanilla Bean",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cherry Brownie Fritter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Donut) Matcha Lychee",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      }
+    ],
+    "updated_at": "2026-02-17T22:56:20.284883Z"
   }
 }
