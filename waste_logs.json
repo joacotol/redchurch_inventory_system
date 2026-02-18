@@ -2536,5 +2536,65 @@
       }
     ],
     "updated_at": "2026-02-17T22:56:20.284883Z"
+  },
+  "2026-02-18": {
+    "date": "2026-02-18",
+    "entries": [
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Muffin) Toffee Chocolate",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Donut) Matcha Lychee",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cherry Brownie Fritter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      }
+    ],
+    "updated_at": "2026-02-18T23:21:57.924980Z"
   }
 }
