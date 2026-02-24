@@ -2866,5 +2866,47 @@
       }
     ],
     "updated_at": "2026-02-23T22:39:04.579133Z"
+  },
+  "2026-02-24": {
+    "date": "2026-02-24",
+    "entries": [
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Square) Caramel Sea Salt Brownie",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Peaches & Cream Filled",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cookie Dough Bullseye (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-02-24T22:12:33.136540Z"
   }
 }
