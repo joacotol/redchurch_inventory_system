@@ -2944,5 +2944,53 @@
       }
     ],
     "updated_at": "2026-02-26T02:32:14.660795Z"
+  },
+  "2026-02-26": {
+    "date": "2026-02-26",
+    "entries": [
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Peaches & Cream Filled",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Sarsaparilla (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Muffin) Toffee Chocolate",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      }
+    ],
+    "updated_at": "2026-02-27T02:57:24.042921Z"
   }
 }
