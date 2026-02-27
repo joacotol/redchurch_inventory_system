@@ -55,6 +55,11 @@
     "active": true
   },
   {
+    "name": "(Donut) Banana Dream Bar",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Brownie Batter",
     "price": 3.75,
     "active": false
@@ -77,7 +82,7 @@
   {
     "name": "(Donut) Cherry Brownie Fritter",
     "price": 4.5,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Cherry Cream bar",
@@ -92,7 +97,7 @@
   {
     "name": "(Donut) Cookie Dough Bullseye (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cupids Sprinkle",
@@ -103,6 +108,11 @@
     "name": "(Donut) Frosted Cranberry",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Fuzzy Peach (V)",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Lavender Lemon",
@@ -127,7 +137,7 @@
   {
     "name": "(Donut) Peaches & Cream Filled",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Pink Lady",
@@ -147,7 +157,7 @@
   {
     "name": "(Donut) Sarsaparilla (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Strawberries & Cream",
