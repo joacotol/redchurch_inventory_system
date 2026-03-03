@@ -3172,5 +3172,41 @@
       }
     ],
     "updated_at": "2026-03-02T22:54:55.494133Z"
+  },
+  "2026-03-03": {
+    "date": "2026-03-03",
+    "entries": [
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Donut) Fuzzy Peach (V)",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cherry Brownie Fritter",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.5
+      },
+      {
+        "item": "(Donut) Banana Dream Bar",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-03-03T22:45:19.767268Z"
   }
 }
