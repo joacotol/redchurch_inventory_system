@@ -3310,5 +3310,59 @@
       }
     ],
     "updated_at": "2026-03-05T22:07:41.684383Z"
+  },
+  "2026-03-07": {
+    "date": "2026-03-07",
+    "entries": [
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Square) Lemon Oat Bar",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Donut) Grapefruit Sunshine (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      },
+      {
+        "item": "(Loaves) Iced Carrot",
+        "qty": 6,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      }
+    ],
+    "updated_at": "2026-03-07T21:55:36.259131Z"
   }
 }
