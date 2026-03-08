@@ -3364,5 +3364,35 @@
       }
     ],
     "updated_at": "2026-03-07T21:55:36.259131Z"
+  },
+  "2026-03-08": {
+    "date": "2026-03-08",
+    "entries": [
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Donut) Banana Dream Bar",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Grapefruit Sunshine (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-03-08T20:59:19.208580Z"
   }
 }
