@@ -3424,17 +3424,17 @@
       },
       {
         "item": "(Donut) Banana Dream Bar",
-        "qty": 3,
+        "qty": 4,
         "reason": "Not sold",
         "unit_price": 0.0
       },
       {
         "item": "(Donut) Grapefruit Sunshine (V)",
-        "qty": 2,
+        "qty": 4,
         "reason": "Not sold",
         "unit_price": 0.0
       }
     ],
-    "updated_at": "2026-03-09T21:46:11.138937Z"
+    "updated_at": "2026-03-09T22:03:26.922917Z"
   }
 }
