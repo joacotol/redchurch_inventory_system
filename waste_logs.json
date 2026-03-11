@@ -3496,5 +3496,53 @@
       }
     ],
     "updated_at": "2026-03-10T21:44:20.928639Z"
+  },
+  "2026-03-11": {
+    "date": "2026-03-11",
+    "entries": [
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Muffin) Toffee Chocolate",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Donut) Pistachio Chocolate Crescent Moon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Grapefruit Sunshine (V)",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-03-11T23:58:06.829316Z"
   }
 }
