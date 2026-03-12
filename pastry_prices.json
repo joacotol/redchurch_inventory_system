@@ -57,7 +57,7 @@
   {
     "name": "(Donut) Banana Dream Bar",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Brownie Batter",
@@ -117,7 +117,7 @@
   {
     "name": "(Donut) Grapefruit Sunshine (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Key Lime Pie Fill (V)",
