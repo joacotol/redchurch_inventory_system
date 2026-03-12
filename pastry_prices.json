@@ -120,6 +120,11 @@
     "active": true
   },
   {
+    "name": "(Donut) Key Lime Pie Fill (V)",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Lavender Lemon",
     "price": 0.0,
     "active": false
@@ -168,6 +173,11 @@
     "name": "(Donut) Sarsaparilla (V)",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Spiced Pear Fill (V)",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Strawberries & Cream",
