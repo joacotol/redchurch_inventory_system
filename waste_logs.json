@@ -3598,5 +3598,65 @@
       }
     ],
     "updated_at": "2026-03-12T23:36:03.258435Z"
+  },
+  "2026-03-13": {
+    "date": "2026-03-13",
+    "entries": [
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Pistachio Chocolate Crescent Moon",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Spiced Pear Fill (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Plain Butter",
+        "qty": 8,
+        "reason": "Not sold",
+        "unit_price": 1.45
+      }
+    ],
+    "updated_at": "2026-03-13T21:52:36.194999Z"
   }
 }
