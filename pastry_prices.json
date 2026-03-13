@@ -42,7 +42,7 @@
   {
     "name": "(Danish) Iced Cinnamon",
     "price": 1.95,
-    "active": false
+    "active": true
   },
   {
     "name": "(Danish) Tomato Mozzarella",
@@ -222,7 +222,7 @@
   {
     "name": "(Muffin) Blueberry Crumble",
     "price": 1.65,
-    "active": false
+    "active": true
   },
   {
     "name": "(Muffin) Toffee Chocolate",
