@@ -3658,5 +3658,59 @@
       }
     ],
     "updated_at": "2026-03-13T21:52:36.194999Z"
+  },
+  "2026-03-14": {
+    "date": "2026-03-14",
+    "entries": [
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Goat Cheese",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Donut) Key Lime Pie Fill (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Spiced Pear Fill (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-03-14T20:57:42.638740Z"
   }
 }
