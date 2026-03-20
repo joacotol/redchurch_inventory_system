@@ -3970,5 +3970,53 @@
       }
     ],
     "updated_at": "2026-03-19T22:40:44.612744Z"
+  },
+  "2026-03-20": {
+    "date": "2026-03-20",
+    "entries": [
+      {
+        "item": "(Donut) Pistachio Chocolate Crescent Moon",
+        "qty": 6,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Toffee Chocolate",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Croissant) Plain Butter",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.45
+      }
+    ],
+    "updated_at": "2026-03-20T22:52:24.497422Z"
   }
 }
