@@ -258,5 +258,10 @@
     "name": "(Square) Nanaimo",
     "price": 2.0,
     "active": true
+  },
+  {
+    "name": "(Tart) S’more Butter Tarts",
+    "price": 0.0,
+    "active": true
   }
 ]
