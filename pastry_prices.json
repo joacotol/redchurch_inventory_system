@@ -42,7 +42,7 @@
   {
     "name": "(Danish) Iced Cinnamon",
     "price": 1.95,
-    "active": true
+    "active": false
   },
   {
     "name": "(Danish) Tomato Mozzarella",
@@ -85,9 +85,19 @@
     "active": false
   },
   {
+    "name": "(Donut) Cherry Cheesecke",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Cherry Cream bar",
     "price": 4.5,
     "active": false
+  },
+  {
+    "name": "(Donut) Chocolate Toffee",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Cinnamon Spice",
@@ -122,7 +132,7 @@
   {
     "name": "(Donut) Key Lime Pie Fill (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Lavender Lemon",
@@ -177,7 +187,7 @@
   {
     "name": "(Donut) Spiced Pear Fill (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Strawberries & Cream",
