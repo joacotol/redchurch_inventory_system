@@ -7,7 +7,7 @@
   {
     "name": "(Cookie) Matcha White Chocolate",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Croissant) Almond Croissant",
@@ -35,7 +35,7 @@
     "active": true
   },
   {
-    "name": "(Danish) Goat Cheese",
+    "name": "(Danish) Caramelized Onion and Goat Cheese",
     "price": 2.75,
     "active": true
   },
@@ -232,7 +232,7 @@
   {
     "name": "(Muffin) Blueberry Crumble",
     "price": 1.65,
-    "active": true
+    "active": false
   },
   {
     "name": "(Muffin) Toffee Chocolate",
@@ -262,7 +262,7 @@
   {
     "name": "(Square) Magic Bar",
     "price": 2.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Square) Nanaimo",
