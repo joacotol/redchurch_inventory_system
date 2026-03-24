@@ -4186,5 +4186,35 @@
       }
     ],
     "updated_at": "2026-03-23T22:14:30.065980Z"
+  },
+  "2026-03-24": {
+    "date": "2026-03-24",
+    "entries": [
+      {
+        "item": "(Croissant) Churro Cruffin",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Donut) Chocolate Toffee",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cherry Cheesecke",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-03-24T21:54:17.763491Z"
   }
 }
