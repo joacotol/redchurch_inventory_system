@@ -4264,5 +4264,41 @@
       }
     ],
     "updated_at": "2026-03-25T22:59:23.832802Z"
+  },
+  "2026-03-26": {
+    "date": "2026-03-26",
+    "entries": [
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Toffee Chocolate",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Donut) Chocolate Toffee",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-03-26T21:56:47.488229Z"
   }
 }
