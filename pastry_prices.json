@@ -87,7 +87,7 @@
   {
     "name": "(Donut) Cherry Cheesecke",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cherry Cream bar",
@@ -97,7 +97,7 @@
   {
     "name": "(Donut) Chocolate Toffee",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cinnamon Spice",
@@ -167,7 +167,7 @@
   {
     "name": "(Donut) Pistachio Chocolate Crescent Moon",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Raspberry Lemon Curd Cake Bar",
@@ -232,12 +232,12 @@
   {
     "name": "(Muffin) Blueberry Crumble",
     "price": 1.65,
-    "active": false
+    "active": true
   },
   {
     "name": "(Muffin) Toffee Chocolate",
     "price": 1.95,
-    "active": true
+    "active": false
   },
   {
     "name": "(Scone) Blueberry Earl Grey",
@@ -247,6 +247,11 @@
   {
     "name": "(Scone) Cheddar & Chive",
     "price": 1.8,
+    "active": true
+  },
+  {
+    "name": "(Scone) Citrus Poppyseed",
+    "price": 0.0,
     "active": true
   },
   {
