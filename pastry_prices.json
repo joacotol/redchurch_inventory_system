@@ -105,6 +105,11 @@
     "active": true
   },
   {
+    "name": "(Donut) Coconut Dip (V)",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Cookie Dough Bullseye (V)",
     "price": 0.0,
     "active": false
@@ -128,6 +133,11 @@
     "name": "(Donut) Grapefruit Sunshine (V)",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Hot Cross Fritter (V)",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Key Lime Pie Fill (V)",
@@ -252,6 +262,11 @@
   {
     "name": "(Scone) Citrus Poppyseed",
     "price": 0.0,
+    "active": true
+  },
+  {
+    "name": "(Scone) Citrus Poppyseed",
+    "price": 2.95,
     "active": true
   },
   {
