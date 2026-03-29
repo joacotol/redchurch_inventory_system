@@ -4324,5 +4324,23 @@
       }
     ],
     "updated_at": "2026-03-27T22:54:18.874016Z"
+  },
+  "2026-03-29": {
+    "date": "2026-03-29",
+    "entries": [
+      {
+        "item": "(Donut) Spiced Pear Fill (V)",
+        "qty": 6,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-03-29T21:23:33.035371Z"
   }
 }
