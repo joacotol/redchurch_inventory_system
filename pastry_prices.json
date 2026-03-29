@@ -262,12 +262,12 @@
   {
     "name": "(Scone) Citrus Poppyseed",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Scone) Citrus Poppyseed",
     "price": 2.95,
-    "active": false
+    "active": true
   },
   {
     "name": "(Square) Caramel Sea Salt Brownie",
