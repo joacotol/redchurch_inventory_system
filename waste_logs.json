@@ -4516,5 +4516,35 @@
       }
     ],
     "updated_at": "2026-03-30T22:03:23.472373Z"
+  },
+  "2026-03-31": {
+    "date": "2026-03-31",
+    "entries": [
+      {
+        "item": "(Donut) Hot Cross Fritter (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Coconut Dip (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Loaves) Iced Carrot",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      }
+    ],
+    "updated_at": "2026-03-31T21:49:44.470369Z"
   }
 }
