@@ -102,12 +102,12 @@
   {
     "name": "(Donut) Cinnamon Spice",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Coconut Dip (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cookie Dough Bullseye (V)",
@@ -197,7 +197,7 @@
   {
     "name": "(Donut) Spiced Pear Fill (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Strawberries & Cream",
@@ -210,9 +210,14 @@
     "active": false
   },
   {
+    "name": "(Donut) Strawberry Mango Matcha",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Vanilla Bean",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
