@@ -4618,5 +4618,41 @@
       }
     ],
     "updated_at": "2026-04-02T23:00:17.234292Z"
+  },
+  "2026-04-03": {
+    "date": "2026-04-03",
+    "entries": [
+      {
+        "item": "(Donut) Vanilla Bean",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Hot Cross Fritter (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Scone) Citrus Poppyseed",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      }
+    ],
+    "updated_at": "2026-04-03T19:12:21.253450Z"
   }
 }
