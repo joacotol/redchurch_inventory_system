@@ -17,7 +17,7 @@
   {
     "name": "(Croissant) Churro Cruffin",
     "price": 2.95,
-    "active": true
+    "active": false
   },
   {
     "name": "(Croissant) Pain au Chocolat",
@@ -102,12 +102,12 @@
   {
     "name": "(Donut) Cinnamon Spice",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Coconut Dip (V)",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Cookie Dough Bullseye (V)",
@@ -197,7 +197,7 @@
   {
     "name": "(Donut) Spiced Pear Fill (V)",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Strawberries & Cream",
@@ -212,12 +212,12 @@
   {
     "name": "(Donut) Strawberry Mango Matcha",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Bean",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
