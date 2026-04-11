@@ -170,6 +170,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Nanaimo Bullseye",
+    "price": 4.25,
+    "active": true
+  },
+  {
     "name": "(Donut) Peaches & Cream Filled",
     "price": 0.0,
     "active": false
