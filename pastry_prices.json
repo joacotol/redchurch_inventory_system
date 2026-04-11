@@ -80,6 +80,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Cherry Berry",
+    "price": 3.75,
+    "active": true
+  },
+  {
     "name": "(Donut) Cherry Brownie Fritter",
     "price": 4.5,
     "active": false
