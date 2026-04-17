@@ -5218,5 +5218,83 @@
       }
     ],
     "updated_at": "2026-04-16T21:49:51.937933Z"
+  },
+  "2026-04-17": {
+    "date": "2026-04-17",
+    "entries": [
+      {
+        "item": "(Donut) Cherry Berry",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 3.75
+      },
+      {
+        "item": "(Donut) Strawberry Mango Matcha",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Nanaimo Bullseye",
+        "qty": 6,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Square) Nanaimo",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Square) Lemon Oat Bar",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Square) Caramel Sea Salt Brownie",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Scone) Citrus Poppyseed",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      }
+    ],
+    "updated_at": "2026-04-17T21:31:47.715505Z"
   }
 }
