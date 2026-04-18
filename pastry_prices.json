@@ -140,6 +140,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Honey Lavender",
+    "price": 4.25,
+    "active": true
+  },
+  {
     "name": "(Donut) Hot Cross Fritter (V)",
     "price": 0.0,
     "active": false
@@ -158,6 +163,11 @@
     "name": "(Donut) London Fog Filled",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Mango Cocnut",
+    "price": 4.0,
+    "active": true
   },
   {
     "name": "(Donut) Matcha Lychee",
