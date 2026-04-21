@@ -5398,5 +5398,35 @@
       }
     ],
     "updated_at": "2026-04-19T21:28:34.345558Z"
+  },
+  "2026-04-21": {
+    "date": "2026-04-21",
+    "entries": [
+      {
+        "item": "(Donut) Mango Cocnut",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 4.0
+      },
+      {
+        "item": "(Scone) Citrus Poppyseed",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      }
+    ],
+    "updated_at": "2026-04-21T21:39:06.591047Z"
   }
 }
