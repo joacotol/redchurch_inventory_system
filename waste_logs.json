@@ -5530,5 +5530,23 @@
       }
     ],
     "updated_at": "2026-04-23T21:23:57.716967Z"
+  },
+  "2026-04-24": {
+    "date": "2026-04-24",
+    "entries": [
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 7,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Honey Lavender",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      }
+    ],
+    "updated_at": "2026-04-24T22:13:15.062022Z"
   }
 }
