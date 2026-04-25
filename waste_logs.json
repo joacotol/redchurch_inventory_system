@@ -5548,5 +5548,41 @@
       }
     ],
     "updated_at": "2026-04-24T22:13:15.062022Z"
+  },
+  "2026-04-25": {
+    "date": "2026-04-25",
+    "entries": [
+      {
+        "item": "(Square) Nanaimo",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      }
+    ],
+    "updated_at": "2026-04-25T20:48:10.677293Z"
   }
 }
