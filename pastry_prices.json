@@ -60,6 +60,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Blueberry Powdered Sugar",
+    "price": 4.25,
+    "active": true
+  },
+  {
     "name": "(Donut) Brownie Batter",
     "price": 3.75,
     "active": false
@@ -68,6 +73,11 @@
     "name": "(Donut) Butterfingers Bullseye",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) cafe au lait",
+    "price": 4.0,
+    "active": true
   },
   {
     "name": "(Donut) Cereal Milk",
