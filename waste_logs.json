@@ -5746,5 +5746,53 @@
       }
     ],
     "updated_at": "2026-04-28T21:25:20.891583Z"
+  },
+  "2026-04-29": {
+    "date": "2026-04-29",
+    "entries": [
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Scone) Citrus Poppyseed",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Donut) Blueberry Powdered Sugar",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      },
+      {
+        "item": "(Donut) Honey Lavender",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 4.25
+      }
+    ],
+    "updated_at": "2026-04-29T23:52:33.316463Z"
   }
 }
