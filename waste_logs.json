@@ -5784,15 +5784,15 @@
         "item": "(Donut) Blueberry Powdered Sugar",
         "qty": 2,
         "reason": "Not sold",
-        "unit_price": 4.25
+        "unit_price": 0.0
       },
       {
         "item": "(Donut) Honey Lavender",
         "qty": 2,
         "reason": "Not sold",
-        "unit_price": 4.25
+        "unit_price": 0.0
       }
     ],
-    "updated_at": "2026-04-29T23:52:33.316463Z"
+    "updated_at": "2026-04-29T23:57:11.379606Z"
   }
 }
