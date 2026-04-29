@@ -61,12 +61,12 @@
   },
   {
     "name": "(Donut) Blueberry Powdered Sugar",
-    "price": 4.25,
+    "price": 0.0,
     "active": true
   },
   {
     "name": "(Donut) Brownie Batter",
-    "price": 3.75,
+    "price": 0.0,
     "active": false
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "(Donut) cafe au lait",
-    "price": 4.0,
+    "price": 0.0,
     "active": true
   },
   {
@@ -91,12 +91,12 @@
   },
   {
     "name": "(Donut) Cherry Berry",
-    "price": 3.75,
-    "active": true
+    "price": 0.0,
+    "active": false
   },
   {
     "name": "(Donut) Cherry Brownie Fritter",
-    "price": 4.5,
+    "price": 0.0,
     "active": false
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "name": "(Donut) Cherry Cream bar",
-    "price": 4.5,
+    "price": 0.0,
     "active": false
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "name": "(Donut) Honey Lavender",
-    "price": 4.25,
+    "price": 0.0,
     "active": true
   },
   {
@@ -176,8 +176,8 @@
   },
   {
     "name": "(Donut) Mango Cocnut",
-    "price": 4.0,
-    "active": true
+    "price": 0.0,
+    "active": false
   },
   {
     "name": "(Donut) Matcha Lychee",
@@ -191,8 +191,8 @@
   },
   {
     "name": "(Donut) Nanaimo Bullseye",
-    "price": 4.25,
-    "active": true
+    "price": 0.0,
+    "active": false
   },
   {
     "name": "(Donut) Peaches & Cream Filled",
@@ -242,7 +242,7 @@
   {
     "name": "(Donut) Strawberry Mango Matcha",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Bean",
