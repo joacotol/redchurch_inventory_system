@@ -5670,7 +5670,7 @@
         "item": "(Donut) Honey Lavender",
         "qty": 1,
         "reason": "Not sold",
-        "unit_price": 4.25
+        "unit_price": 0.0
       },
       {
         "item": "(Donut) Cinnamon Spice",
@@ -5691,7 +5691,7 @@
         "unit_price": 2.75
       }
     ],
-    "updated_at": "2026-04-27T21:45:10.459205Z"
+    "updated_at": "2026-04-29T23:57:36.951253Z"
   },
   "2026-04-28": {
     "date": "2026-04-28",
