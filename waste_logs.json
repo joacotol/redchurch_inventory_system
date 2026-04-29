@@ -5700,7 +5700,7 @@
         "item": "(Donut) cafe au lait",
         "qty": 1,
         "reason": "Not sold",
-        "unit_price": 4.0
+        "unit_price": 0.0
       },
       {
         "item": "(Donut) Cinnamon Spice",
@@ -5712,13 +5712,13 @@
         "item": "(Donut) Blueberry Powdered Sugar",
         "qty": 1,
         "reason": "Not sold",
-        "unit_price": 4.25
+        "unit_price": 0.0
       },
       {
         "item": "(Donut) Blueberry Powdered Sugar",
         "qty": 1,
         "reason": "Not sold",
-        "unit_price": 4.25
+        "unit_price": 0.0
       },
       {
         "item": "(Croissant) Almond Croissant",
@@ -5745,7 +5745,7 @@
         "unit_price": 2.75
       }
     ],
-    "updated_at": "2026-04-28T21:25:20.891583Z"
+    "updated_at": "2026-04-29T23:57:20.015032Z"
   },
   "2026-04-29": {
     "date": "2026-04-29",
