@@ -65,6 +65,11 @@
     "active": true
   },
   {
+    "name": "(Donut) Blueberry Shortbread",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Brownie Batter",
     "price": 0.0,
     "active": false
@@ -77,7 +82,7 @@
   {
     "name": "(Donut) cafe au lait",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cereal Milk",
@@ -130,6 +135,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Cosmic Donut",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Cupids Sprinkle",
     "price": 0.0,
     "active": false
@@ -152,7 +162,7 @@
   {
     "name": "(Donut) Honey Lavender",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Hot Cross Fritter (V)",
