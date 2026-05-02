@@ -82,7 +82,7 @@
   {
     "name": "(Donut) cafe au lait",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Cereal Milk",
