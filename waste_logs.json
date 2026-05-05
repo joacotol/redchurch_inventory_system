@@ -5949,5 +5949,65 @@
       }
     ],
     "updated_at": "2026-05-03T20:35:32.895842Z"
+  },
+  "2026-05-05": {
+    "date": "2026-05-05",
+    "entries": [
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Tart) S’more Butter Tarts",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cosmic Donut",
+        "qty": 6,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Blueberry Powdered Sugar",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) cafe au lait",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-05-05T20:54:20.573139Z"
   }
 }
