@@ -45,6 +45,11 @@
     "active": false
   },
   {
+    "name": "(Danish) Spinach Artichoke",
+    "price": 2.75,
+    "active": true
+  },
+  {
     "name": "(Danish) Tomato Mozzarella",
     "price": 2.75,
     "active": true
