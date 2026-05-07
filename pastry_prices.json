@@ -67,7 +67,7 @@
   {
     "name": "(Donut) Blueberry Powdered Sugar",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Blueberry Shortbread",
@@ -85,7 +85,7 @@
     "active": false
   },
   {
-    "name": "(Donut) cafe au lait",
+    "name": "(Donut) Cafe au Lait",
     "price": 0.0,
     "active": true
   },
@@ -142,12 +142,17 @@
   {
     "name": "(Donut) Cosmic Donut",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cupids Sprinkle",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Earl Grey (V)",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Frosted Cranberry",
@@ -258,6 +263,11 @@
     "name": "(Donut) Strawberry Mango Matcha",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Strawberry Rhubarb Pie (V)",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Vanilla Bean",
