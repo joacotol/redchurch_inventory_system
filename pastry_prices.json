@@ -87,7 +87,7 @@
   {
     "name": "(Donut) Cafe au Lait",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cereal Milk",
@@ -190,6 +190,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Lemon Curd Filled",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) London Fog Filled",
     "price": 0.0,
     "active": false
@@ -213,6 +218,11 @@
     "name": "(Donut) Nanaimo Bullseye",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Passionfruit Bar",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Peaches & Cream Filled",
@@ -267,7 +277,7 @@
   {
     "name": "(Donut) Strawberry Rhubarb Pie (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Bean",
