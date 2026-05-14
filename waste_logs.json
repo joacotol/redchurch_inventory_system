@@ -6525,5 +6525,47 @@
       }
     ],
     "updated_at": "2026-05-13T21:13:07.110920Z"
+  },
+  "2026-05-14": {
+    "date": "2026-05-14",
+    "entries": [
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Strawberry Rhubarb Pie (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-05-14T21:22:17.692458Z"
   }
 }
