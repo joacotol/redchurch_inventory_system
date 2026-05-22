@@ -6939,5 +6939,47 @@
       }
     ],
     "updated_at": "2026-05-21T20:56:23.954465Z"
+  },
+  "2026-05-22": {
+    "date": "2026-05-22",
+    "entries": [
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Citrus Poppyseed",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Lemon Curd Filled",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-05-22T21:52:50.937956Z"
   }
 }
