@@ -65,6 +65,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Blackberry Coconut (V)",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Blueberry Powdered Sugar",
     "price": 0.0,
     "active": false
@@ -222,7 +227,7 @@
   {
     "name": "(Donut) Passionfruit Bar",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Peaches & Cream Filled",
