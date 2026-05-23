@@ -6981,5 +6981,83 @@
       }
     ],
     "updated_at": "2026-05-22T21:52:50.937956Z"
+  },
+  "2026-05-23": {
+    "date": "2026-05-23",
+    "entries": [
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Square) Lemon Oat Bar",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Scone) Citrus Poppyseed",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Croissant) Plain Butter",
+        "qty": 14,
+        "reason": "Not sold",
+        "unit_price": 1.45
+      },
+      {
+        "item": "(Donut) Lemon Curd Filled",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Earl Grey (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Blackberry Coconut (V)",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-05-23T21:28:46.325216Z"
   }
 }
