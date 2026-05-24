@@ -7059,5 +7059,71 @@
       }
     ],
     "updated_at": "2026-05-23T21:28:46.325216Z"
+  },
+  "2026-05-24": {
+    "date": "2026-05-24",
+    "entries": [
+      {
+        "item": "(Donut) Lemon Curd Filled",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Blackberry Coconut (V)",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Earl Grey (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      }
+    ],
+    "updated_at": "2026-05-24T19:53:11.883971Z"
   }
 }
