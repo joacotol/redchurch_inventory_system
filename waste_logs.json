@@ -7197,5 +7197,53 @@
       }
     ],
     "updated_at": "2026-05-25T21:37:55.370409Z"
+  },
+  "2026-05-26": {
+    "date": "2026-05-26",
+    "entries": [
+      {
+        "item": "(Donut) Lemon Curd Filled",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Blackberry Coconut (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Earl Grey (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      }
+    ],
+    "updated_at": "2026-05-26T21:47:34.247949Z"
   }
 }
