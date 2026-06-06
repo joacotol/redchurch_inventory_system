@@ -7641,5 +7641,101 @@
       }
     ],
     "updated_at": "2026-06-05T22:22:17.293223Z"
+  },
+  "2026-06-06": {
+    "date": "2026-06-06",
+    "entries": [
+      {
+        "item": "(Donut) Blackberry Coconut (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 6,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Lemon Curd Filled",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Citrus Poppyseed",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Square) Lemon Oat Bar",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Croissant) Plain Butter",
+        "qty": 12,
+        "reason": "Not sold",
+        "unit_price": 1.45
+      }
+    ],
+    "updated_at": "2026-06-06T21:18:54.473838Z"
   }
 }
