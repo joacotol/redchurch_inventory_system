@@ -7737,5 +7737,41 @@
       }
     ],
     "updated_at": "2026-06-06T21:18:54.473838Z"
+  },
+  "2026-06-07": {
+    "date": "2026-06-07",
+    "entries": [
+      {
+        "item": "(Donut) Lemon Curd Filled",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Scone) Citrus Poppyseed",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      }
+    ],
+    "updated_at": "2026-06-07T19:46:03.453706Z"
   }
 }
