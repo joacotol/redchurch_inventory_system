@@ -67,7 +67,7 @@
   {
     "name": "(Donut) Blackberry Coconut (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Blueberry Powdered Sugar",
@@ -125,6 +125,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Chocolate Chip Cookie (V)",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Chocolate Toffee",
     "price": 0.0,
     "active": false
@@ -157,7 +162,7 @@
   {
     "name": "(Donut) Earl Grey (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Frosted Cranberry",
@@ -197,7 +202,7 @@
   {
     "name": "(Donut) Lemon Curd Filled",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) London Fog Filled",
