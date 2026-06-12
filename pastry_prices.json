@@ -85,6 +85,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Buttered Toast",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Butterfingers Bullseye",
     "price": 0.0,
     "active": false
@@ -193,6 +198,11 @@
     "name": "(Donut) Key Lime Pie Fill (V)",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Lavender Blackberry Filled (V)",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Lavender Lemon",
