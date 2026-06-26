@@ -8595,7 +8595,7 @@
     "entries": [
       {
         "item": "(Donut) Apple Fritter",
-        "qty": 2,
+        "qty": 1,
         "reason": "Not sold",
         "unit_price": 0.0
       },
@@ -8648,6 +8648,6 @@
         "unit_price": 1.45
       }
     ],
-    "updated_at": "2026-06-26T21:18:44.366358Z"
+    "updated_at": "2026-06-26T21:28:40.601434Z"
   }
 }
