@@ -8865,5 +8865,53 @@
       }
     ],
     "updated_at": "2026-07-01T20:45:42.112342Z"
+  },
+  "2026-07-02": {
+    "date": "2026-07-02",
+    "entries": [
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Tart) S’more Butter Tarts",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.6
+      }
+    ],
+    "updated_at": "2026-07-02T21:12:55.246410Z"
   }
 }
