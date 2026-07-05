@@ -8979,5 +8979,77 @@
       }
     ],
     "updated_at": "2026-07-03T21:54:14.897423Z"
+  },
+  "2026-07-05": {
+    "date": "2026-07-05",
+    "entries": [
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 8,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Lavender Blackberry Filled (V)",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Chocolate Chip Cookie (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Plain Butter",
+        "qty": 11,
+        "reason": "Not sold",
+        "unit_price": 1.45
+      }
+    ],
+    "updated_at": "2026-07-05T21:11:36.643583Z"
   }
 }
