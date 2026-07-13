@@ -87,7 +87,7 @@
   {
     "name": "(Donut) Buttered Toast",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Butterfingers Bullseye",
@@ -165,6 +165,16 @@
     "active": false
   },
   {
+    "name": "(Donut) Dot Donut",
+    "price": 0.0,
+    "active": true
+  },
+  {
+    "name": "(Donut) Dunkaroo Bullseye",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Earl Grey (V)",
     "price": 0.0,
     "active": false
@@ -202,12 +212,17 @@
   {
     "name": "(Donut) Lavender Blackberry Filled (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Lavender Lemon",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Lemon Blueberry Fritter",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Lemon Curd Filled",
@@ -273,6 +288,11 @@
     "name": "(Donut) Sarsaparilla (V)",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Sour Cream Dip",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Spiced Pear Fill (V)",
