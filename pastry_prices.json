@@ -132,7 +132,7 @@
   {
     "name": "(Donut) Chocolate Chip Cookie (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Chocolate Toffee",
@@ -142,7 +142,7 @@
   {
     "name": "(Donut) Cinnamon Spice",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Coconut Dip (V)",
@@ -342,7 +342,7 @@
   {
     "name": "(Loaves) Iced Carrot",
     "price": 1.58,
-    "active": true
+    "active": false
   },
   {
     "name": "(Muffin) Banana Walnut (V)",
@@ -377,7 +377,7 @@
   {
     "name": "(Scone) Citrus Poppyseed",
     "price": 2.95,
-    "active": true
+    "active": false
   },
   {
     "name": "(Square) Caramel Sea Salt Brownie",
@@ -390,12 +390,12 @@
     "active": true
   },
   {
-    "name": "(Square) Magic Bar",
+    "name": "(Square) Nanaimo",
     "price": 2.0,
-    "active": false
+    "active": true
   },
   {
-    "name": "(Square) Nanaimo",
+    "name": "(Square) Rhubarb Cake",
     "price": 2.0,
     "active": true
   },
