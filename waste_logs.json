@@ -9327,5 +9327,53 @@
       }
     ],
     "updated_at": "2026-07-14T20:52:09.146836Z"
+  },
+  "2026-07-15": {
+    "date": "2026-07-15",
+    "entries": [
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Tart) S’more Butter Tarts",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.6
+      },
+      {
+        "item": "(Donut) Lemon Blueberry Fritter",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-07-15T20:46:45.423418Z"
   }
 }
