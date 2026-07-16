@@ -9375,5 +9375,65 @@
       }
     ],
     "updated_at": "2026-07-15T20:46:45.423418Z"
+  },
+  "2026-07-16": {
+    "date": "2026-07-16",
+    "entries": [
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Donut) Lemon Blueberry Fritter",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Dot Donut",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Dunkaroo Bullseye",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 8,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-07-16T21:01:58.555517Z"
   }
 }
