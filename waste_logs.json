@@ -9630,8 +9630,38 @@
         "qty": 1,
         "reason": "Not sold",
         "unit_price": 1.95
+      },
+      {
+        "item": "(Donut) Sarsaparilla (V)",
+        "qty": 6,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 7,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Dunkaroo Bullseye",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Vanilla Sprinkle",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Strawberries & Cream",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
       }
     ],
-    "updated_at": "2026-07-22T21:08:27.169563Z"
+    "updated_at": "2026-07-22T21:10:03.832068Z"
   }
 }
