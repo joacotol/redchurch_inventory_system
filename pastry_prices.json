@@ -167,7 +167,7 @@
   {
     "name": "(Donut) Dot Donut",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Dunkaroo Bullseye",
@@ -287,12 +287,12 @@
   {
     "name": "(Donut) Sarsaparilla (V)",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Sour Cream Dip",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Spiced Pear Fill (V)",
@@ -302,7 +302,7 @@
   {
     "name": "(Donut) Strawberries & Cream",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Strawberry Kiwi",
@@ -327,7 +327,7 @@
   {
     "name": "(Donut) Vanilla Sprinkle",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Wildberry Poptart",
