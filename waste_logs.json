@@ -9723,5 +9723,35 @@
       }
     ],
     "updated_at": "2026-07-23T21:02:11.331374Z"
+  },
+  "2026-07-24": {
+    "date": "2026-07-24",
+    "entries": [
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Donut) Vanilla Sprinkle",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cherry Lime (V)",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Strawberry Banana Filled",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-07-24T22:03:11.859777Z"
   }
 }
