@@ -9765,25 +9765,25 @@
       },
       {
         "item": "(Donut) Strawberry Banana Filled",
-        "qty": 4,
+        "qty": 5,
         "reason": "Not sold",
         "unit_price": 0.0
       },
       {
         "item": "(Donut) Cherry Lime (V)",
-        "qty": 2,
+        "qty": 5,
         "reason": "Not sold",
         "unit_price": 0.0
       },
       {
         "item": "(Donut) Cocoa Berry (V)",
-        "qty": 2,
+        "qty": 3,
         "reason": "Not sold",
         "unit_price": 0.0
       },
       {
         "item": "(Donut) Vanilla Sprinkle",
-        "qty": 2,
+        "qty": 5,
         "reason": "Not sold",
         "unit_price": 0.0
       },
@@ -9836,6 +9836,6 @@
         "unit_price": 2.6
       }
     ],
-    "updated_at": "2026-07-25T20:50:51.177508Z"
+    "updated_at": "2026-07-25T20:51:19.669578Z"
   }
 }
