@@ -10404,8 +10404,14 @@
         "qty": 5,
         "reason": "Not sold",
         "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Plain Butter",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.45
       }
     ],
-    "updated_at": "2026-08-01T20:39:20.343388Z"
+    "updated_at": "2026-08-01T20:41:22.475175Z"
   }
 }
