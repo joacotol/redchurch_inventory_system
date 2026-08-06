@@ -132,7 +132,7 @@
   {
     "name": "(Donut) Cherry Lime (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Chocolate Chip Cookie (V)",
@@ -147,12 +147,12 @@
   {
     "name": "(Donut) Cinnamon Spice",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Cocoa Berry (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Coconut Dip (V)",
@@ -178,6 +178,11 @@
     "name": "(Donut) Dot Donut",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Double Coconut (V)",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Dunkaroo Bullseye",
@@ -317,7 +322,7 @@
   {
     "name": "(Donut) Strawberry Banana Filled",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Strawberry Kiwi",
@@ -335,14 +340,19 @@
     "active": false
   },
   {
+    "name": "(Donut) Strawberry Shortcake Fill (V)",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Vanilla Bean",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Wildberry Poptart",
