@@ -10737,5 +10737,77 @@
       }
     ],
     "updated_at": "2026-08-06T20:53:42.637739Z"
+  },
+  "2026-08-07": {
+    "date": "2026-08-07",
+    "entries": [
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Double Coconut (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Vanilla Bean",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Square) Lemon Oat Bar",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      }
+    ],
+    "updated_at": "2026-08-07T20:56:05.264491Z"
   }
 }
