@@ -10935,5 +10935,65 @@
       }
     ],
     "updated_at": "2026-08-09T20:58:24.401068Z"
+  },
+  "2026-08-10": {
+    "date": "2026-08-10",
+    "entries": [
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Donut) Double Coconut (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Strawberry Shortcake Fill (V)",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Square) Nanaimo",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      }
+    ],
+    "updated_at": "2026-08-10T21:02:39.611280Z"
   }
 }
