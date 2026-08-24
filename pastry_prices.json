@@ -65,9 +65,19 @@
     "active": false
   },
   {
+    "name": "(Donut) Bella Coola",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Blackberry Coconut (V)",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Blueberry Lavender",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Blueberry Powdered Sugar",
@@ -182,7 +192,7 @@
   {
     "name": "(Donut) Double Coconut (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Dunkaroo Bullseye",
@@ -347,7 +357,7 @@
   {
     "name": "(Donut) Vanilla Bean",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
