@@ -11853,5 +11853,95 @@
       }
     ],
     "updated_at": "2026-08-23T20:10:40.416287Z"
+  },
+  "2026-08-24": {
+    "date": "2026-08-24",
+    "entries": [
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Bella Coola",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Blueberry Lavender",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Strawberry Shortcake Fill (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Tart) S’more Butter Tarts",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.6
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      }
+    ],
+    "updated_at": "2026-08-24T20:31:32.936949Z"
   }
 }
