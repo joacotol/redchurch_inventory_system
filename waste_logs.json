@@ -11943,5 +11943,41 @@
       }
     ],
     "updated_at": "2026-08-25T11:07:17.569940Z"
+  },
+  "2026-08-25": {
+    "date": "2026-08-25",
+    "entries": [
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Square) Nanaimo",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Square) Lemon Oat Bar",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Donut) Blueberry Lavender",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-08-25T20:14:36.529199Z"
   }
 }
