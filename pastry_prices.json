@@ -67,7 +67,7 @@
   {
     "name": "(Donut) Bella Coola",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Blackberry Coconut (V)",
@@ -77,7 +77,7 @@
   {
     "name": "(Donut) Blueberry Lavender",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Blueberry Powdered Sugar",
@@ -168,6 +168,11 @@
     "name": "(Donut) Coconut Dip (V)",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Coffee Dip",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Cookie Dough Bullseye (V)",
@@ -265,6 +270,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Maple Dip",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Matcha Lychee",
     "price": 0.0,
     "active": false
@@ -283,6 +293,11 @@
     "name": "(Donut) Passionfruit Bar",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Peach Whiskey Fritter",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Peaches & Cream Filled",
@@ -352,7 +367,7 @@
   {
     "name": "(Donut) Strawberry Shortcake Fill (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Bean",
