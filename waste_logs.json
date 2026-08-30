@@ -12225,5 +12225,71 @@
       }
     ],
     "updated_at": "2026-08-29T18:41:30.308801Z"
+  },
+  "2026-08-30": {
+    "date": "2026-08-30",
+    "entries": [
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Square) Nanaimo",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Tomato Mozzarella",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Donut) Maple Dip",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Cookie) Chocolate Chip",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-08-30T20:25:53.772538Z"
   }
 }
