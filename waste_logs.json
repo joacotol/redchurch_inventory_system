@@ -12465,5 +12465,41 @@
       }
     ],
     "updated_at": "2026-09-02T20:34:26.350758Z"
+  },
+  "2026-09-03": {
+    "date": "2026-09-03",
+    "entries": [
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      },
+      {
+        "item": "(Square) Caramel Sea Salt Brownie",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Muffin) Blueberry Crumble",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Scone) Blueberry Earl Grey",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      }
+    ],
+    "updated_at": "2026-09-03T21:27:34.063966Z"
   }
 }
