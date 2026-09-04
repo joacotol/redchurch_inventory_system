@@ -12501,5 +12501,23 @@
       }
     ],
     "updated_at": "2026-09-03T21:27:38.822846Z"
+  },
+  "2026-09-04": {
+    "date": "2026-09-04",
+    "entries": [
+      {
+        "item": "(Donut) Coffee Dip",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      }
+    ],
+    "updated_at": "2026-09-04T21:49:48.771281Z"
   }
 }
