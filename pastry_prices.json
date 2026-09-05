@@ -52,7 +52,7 @@
   {
     "name": "(Danish) Tomato Mozzarella",
     "price": 2.75,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Apple Fritter",
@@ -157,7 +157,7 @@
   {
     "name": "(Donut) Cinnamon Spice",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cocoa Berry (V)",
@@ -297,7 +297,7 @@
   {
     "name": "(Donut) Peach Whiskey Fritter",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Peaches & Cream Filled",
@@ -365,6 +365,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Strawberry Sesame",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Strawberry Shortcake Fill (V)",
     "price": 0.0,
     "active": false
@@ -387,12 +392,17 @@
   {
     "name": "(Loaves) Chocolate Banana",
     "price": 1.58,
-    "active": true
+    "active": false
   },
   {
     "name": "(Loaves) Iced Carrot",
     "price": 1.58,
     "active": false
+  },
+  {
+    "name": "(Loaves) Vegan Pumpkin Chocolate",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Muffin) Banana Walnut (V)",
@@ -402,7 +412,7 @@
   {
     "name": "(Muffin) Blueberry Crumble",
     "price": 1.65,
-    "active": true
+    "active": false
   },
   {
     "name": "(Muffin) Toffee Chocolate",
@@ -412,7 +422,7 @@
   {
     "name": "(Scone) Blueberry Earl Grey",
     "price": 1.8,
-    "active": true
+    "active": false
   },
   {
     "name": "(Scone) Cheddar & Chive",
@@ -430,6 +440,11 @@
     "active": false
   },
   {
+    "name": "(Scone) Maple Pumpkin",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Square) Caramel Sea Salt Brownie",
     "price": 2.0,
     "active": true
@@ -437,7 +452,7 @@
   {
     "name": "(Square) Lemon Oat Bar",
     "price": 2.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Square) Nanaimo",
@@ -447,11 +462,21 @@
   {
     "name": "(Square) Rhubarb Cake",
     "price": 2.0,
+    "active": false
+  },
+  {
+    "name": "(Squares) Coffee Cake",
+    "price": 0.0,
     "active": true
   },
   {
     "name": "(Tart) S’more Butter Tarts",
     "price": 2.6,
+    "active": false
+  },
+  {
+    "name": "(Tarts) Pumpkin Pecan",
+    "price": 0.0,
     "active": true
   }
 ]
