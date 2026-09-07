@@ -12609,5 +12609,35 @@
       }
     ],
     "updated_at": "2026-09-06T20:15:40.326201Z"
+  },
+  "2026-09-07": {
+    "date": "2026-09-07",
+    "entries": [
+      {
+        "item": "(Donut) Strawberry Sesame",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Maple Pumpkin",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-09-07T20:16:00.119330Z"
   }
 }
