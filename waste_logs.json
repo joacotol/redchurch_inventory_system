@@ -12644,48 +12644,84 @@
     "date": "2026-09-08",
     "entries": [
       {
-        "item": "(Danish) Caramelized Onion and Goat Cheese",
-        "qty": 2,
-        "reason": "Not sold",
-        "unit_price": 2.75
-      },
-      {
         "item": "(Danish) Spinach Artichoke",
-        "qty": 6,
+        "qty": 1,
         "reason": "Not sold",
         "unit_price": 2.75
       },
       {
         "item": "(Danish) Iced Cinnamon",
-        "qty": 3,
+        "qty": 4,
         "reason": "Not sold",
         "unit_price": 1.95
       },
       {
         "item": "(Scone) Cheddar & Chive",
-        "qty": 3,
+        "qty": 1,
         "reason": "Not sold",
         "unit_price": 1.8
       },
       {
         "item": "(Scone) Maple Pumpkin",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Tarts) Pumpkin Pecan",
         "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Loaves) Vegan Pumpkin Chocolate",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Square) Caramel Sea Salt Brownie",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.0
+      },
+      {
+        "item": "(Donut) Coffee Dip",
+        "qty": 6,
         "reason": "Not sold",
         "unit_price": 0.0
       },
       {
         "item": "(Donut) Strawberry Sesame",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Vanilla Bean",
         "qty": 3,
         "reason": "Not sold",
         "unit_price": 0.0
       },
       {
-        "item": "(Donut) Coffee Dip",
-        "qty": 2,
+        "item": "(Donut) Maple Dip",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 4,
         "reason": "Not sold",
         "unit_price": 0.0
       }
     ],
-    "updated_at": "2026-09-08T20:24:53.280551Z"
+    "updated_at": "2026-09-09T20:30:40.723730Z"
   }
 }
