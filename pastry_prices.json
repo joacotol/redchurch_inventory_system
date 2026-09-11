@@ -157,7 +157,7 @@
   {
     "name": "(Donut) Cinnamon Spice",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Cocoa Berry (V)",
@@ -172,7 +172,7 @@
   {
     "name": "(Donut) Coffee Dip",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cookie Dough Bullseye (V)",
@@ -225,6 +225,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Honey Dip",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Honey Lavender",
     "price": 0.0,
     "active": false
@@ -260,6 +265,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Lemon Lime Thai Tea Fill",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) London Fog Filled",
     "price": 0.0,
     "active": false
@@ -272,7 +282,7 @@
   {
     "name": "(Donut) Maple Dip",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Matcha Lychee",
@@ -297,7 +307,7 @@
   {
     "name": "(Donut) Peach Whiskey Fritter",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Peaches & Cream Filled",
@@ -367,7 +377,7 @@
   {
     "name": "(Donut) Strawberry Sesame",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Strawberry Shortcake Fill (V)",
@@ -377,7 +387,7 @@
   {
     "name": "(Donut) Vanilla Bean",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
@@ -401,7 +411,7 @@
   },
   {
     "name": "(Loaves) Vegan Pumpkin Chocolate",
-    "price": 0.0,
+    "price": 2.0,
     "active": true
   },
   {
@@ -413,6 +423,11 @@
     "name": "(Muffin) Blueberry Crumble",
     "price": 1.65,
     "active": false
+  },
+  {
+    "name": "(Muffin) Pumpkin Pepita",
+    "price": 1.65,
+    "active": true
   },
   {
     "name": "(Muffin) Toffee Chocolate",
@@ -441,7 +456,7 @@
   },
   {
     "name": "(Scone) Maple Pumpkin",
-    "price": 0.0,
+    "price": 1.8,
     "active": true
   },
   {
@@ -465,8 +480,8 @@
     "active": false
   },
   {
-    "name": "(Squares) Coffee Cake",
-    "price": 0.0,
+    "name": "(Squares) Apple Cinnamon Coffee Cake",
+    "price": 2.0,
     "active": true
   },
   {
@@ -476,7 +491,7 @@
   },
   {
     "name": "(Tarts) Pumpkin Pecan",
-    "price": 0.0,
+    "price": 2.4,
     "active": true
   }
 ]
