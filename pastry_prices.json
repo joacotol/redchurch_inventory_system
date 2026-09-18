@@ -145,6 +145,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Chocolate Banana Fill",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Chocolate Chip Cookie (V)",
     "price": 0.0,
     "active": false
@@ -183,6 +188,11 @@
     "name": "(Donut) Cosmic Donut",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Cranberry Pear Fritter (V)",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Cupids Sprinkle",
@@ -227,7 +237,7 @@
   {
     "name": "(Donut) Honey Dip",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Honey Lavender",
@@ -267,7 +277,7 @@
   {
     "name": "(Donut) Lemon Lime Thai Tea Fill",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) London Fog Filled",
@@ -307,7 +317,7 @@
   {
     "name": "(Donut) Peach Whiskey Fritter",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Peaches & Cream Filled",
@@ -387,7 +397,7 @@
   {
     "name": "(Donut) Vanilla Bean",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
