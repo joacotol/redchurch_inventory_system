@@ -13155,5 +13155,35 @@
       }
     ],
     "updated_at": "2026-09-19T20:44:34.001166Z"
+  },
+  "2026-09-20": {
+    "date": "2026-09-20",
+    "entries": [
+      {
+        "item": "(Cookie) Chocolate Chip",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Muffin) Pumpkin Pepita",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      }
+    ],
+    "updated_at": "2026-09-20T20:39:59.026491Z"
   }
 }
