@@ -55,6 +55,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Apple Cider (V)",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Apple Fritter",
     "price": 0.0,
     "active": true
@@ -192,7 +197,7 @@
   {
     "name": "(Donut) Cranberry Pear Fritter (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cupids Sprinkle",
@@ -305,6 +310,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Mixed Nut (V)",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Nanaimo Bullseye",
     "price": 0.0,
     "active": false
@@ -397,7 +407,7 @@
   {
     "name": "(Donut) Vanilla Bean",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
