@@ -13545,5 +13545,53 @@
       }
     ],
     "updated_at": "2026-09-26T20:38:59.128174Z"
+  },
+  "2026-09-27": {
+    "date": "2026-09-27",
+    "entries": [
+      {
+        "item": "(Muffin) Pumpkin Pepita",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Donut) Mixed Nut (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Scone) Maple Pumpkin",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      }
+    ],
+    "updated_at": "2026-09-27T20:38:28.114850Z"
   }
 }
