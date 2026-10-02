@@ -152,7 +152,7 @@
   {
     "name": "(Donut) Chocolate Banana Fill",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Chocolate Chip Cookie (V)",
@@ -167,7 +167,7 @@
   {
     "name": "(Donut) Cinnamon Spice",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cocoa Berry (V)",
@@ -238,6 +238,11 @@
     "name": "(Donut) Grapefruit Sunshine (V)",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Harvest Sorinkle (V)",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Honey Dip",
@@ -312,7 +317,7 @@
   {
     "name": "(Donut) Mixed Nut (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Nanaimo Bullseye",
@@ -323,6 +328,11 @@
     "name": "(Donut) Passionfruit Bar",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Peach Bellini Cheesecake",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Peach Whiskey Fritter",
@@ -343,6 +353,11 @@
     "name": "(Donut) Pistachio Chocolate Crescent Moon",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Pumpkin (V)",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Raspberry Lemon Curd Cake Bar",
