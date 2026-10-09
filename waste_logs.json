@@ -14166,8 +14166,14 @@
         "qty": 1,
         "reason": "Not sold",
         "unit_price": 0.0
+      },
+      {
+        "item": "(Cookie) Chocolate Chip",
+        "qty": 10,
+        "reason": "Not sold",
+        "unit_price": 0.0
       }
     ],
-    "updated_at": "2026-10-09T20:17:36.244568Z"
+    "updated_at": "2026-10-09T20:21:57.507968Z"
   }
 }
