@@ -14145,5 +14145,29 @@
       }
     ],
     "updated_at": "2026-10-08T21:49:16.304899Z"
+  },
+  "2026-10-09": {
+    "date": "2026-10-09",
+    "entries": [
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Donut) Apple Cider (V)",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-10-09T20:17:36.244568Z"
   }
 }
