@@ -14643,5 +14643,35 @@
       }
     ],
     "updated_at": "2026-10-22T21:12:25.709975Z"
+  },
+  "2026-10-23": {
+    "date": "2026-10-23",
+    "entries": [
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      }
+    ],
+    "updated_at": "2026-10-23T20:40:18.843419Z"
   }
 }
