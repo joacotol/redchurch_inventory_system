@@ -15009,5 +15009,53 @@
       }
     ],
     "updated_at": "2026-11-01T22:05:29.707902Z"
+  },
+  "2026-11-02": {
+    "date": "2026-11-02",
+    "entries": [
+      {
+        "item": "(Cookie) Chocolate Chip",
+        "qty": 6,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Muffin) Pumpkin Pepita",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Maple Pumpkin",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Danish) Iced Cinnamon",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.95
+      }
+    ],
+    "updated_at": "2026-11-02T21:41:29.242645Z"
   }
 }
