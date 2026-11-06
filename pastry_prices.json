@@ -57,7 +57,7 @@
   {
     "name": "(Donut) Apple Cider (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Apple Fritter",
@@ -235,6 +235,11 @@
     "active": false
   },
   {
+    "name": "(Donut) Ginger Coconut",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Grapefruit Sunshine (V)",
     "price": 0.0,
     "active": false
@@ -242,7 +247,7 @@
   {
     "name": "(Donut) Harvest Sprinkle (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Honey Dip",
@@ -332,7 +337,7 @@
   {
     "name": "(Donut) Peach Bellini Cheesecake",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Peach Whiskey Fritter",
@@ -357,7 +362,7 @@
   {
     "name": "(Donut) Pumpkin (V)",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Raspberry Lemon Curd Cake Bar",
