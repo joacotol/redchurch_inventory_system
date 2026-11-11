@@ -15345,5 +15345,23 @@
       }
     ],
     "updated_at": "2026-11-10T21:27:42.206807Z"
+  },
+  "2026-11-11": {
+    "date": "2026-11-11",
+    "entries": [
+      {
+        "item": "(Muffin) Banana Walnut (V)",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Muffin) Pumpkin Pepita",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      }
+    ],
+    "updated_at": "2026-11-11T22:35:00.240541Z"
   }
 }
