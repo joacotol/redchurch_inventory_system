@@ -15360,8 +15360,14 @@
         "qty": 2,
         "reason": "Not sold",
         "unit_price": 1.65
+      },
+      {
+        "item": "(Scone) Maple Pumpkin",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
       }
     ],
-    "updated_at": "2026-11-11T22:35:00.240541Z"
+    "updated_at": "2026-11-11T22:35:18.749046Z"
   }
 }
