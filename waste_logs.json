@@ -15369,5 +15369,41 @@
       }
     ],
     "updated_at": "2026-11-11T22:35:18.749046Z"
+  },
+  "2026-11-12": {
+    "date": "2026-11-12",
+    "entries": [
+      {
+        "item": "(Croissant) Hazelnut Pain Suisse",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 3.3
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Scone) Maple Pumpkin",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Tarts) Pumpkin Pecan",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.4
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      }
+    ],
+    "updated_at": "2026-11-12T21:22:32.387806Z"
   }
 }
