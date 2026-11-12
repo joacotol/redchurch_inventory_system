@@ -15,9 +15,19 @@
     "active": true
   },
   {
+    "name": "(Croissant) Caramel Apple",
+    "price": 3.3,
+    "active": true
+  },
+  {
     "name": "(Croissant) Churro Cruffin",
     "price": 2.95,
     "active": false
+  },
+  {
+    "name": "(Croissant) Hazelnut Pain Suisse",
+    "price": 3.3,
+    "active": true
   },
   {
     "name": "(Croissant) Pain au Chocolat",
@@ -465,6 +475,11 @@
     "active": false
   },
   {
+    "name": "(Muffin) Gingerbread",
+    "price": 1.65,
+    "active": true
+  },
+  {
     "name": "(Muffin) Pumpkin Pepita",
     "price": 1.65,
     "active": true
@@ -493,6 +508,11 @@
     "name": "(Scone) Citrus Poppyseed",
     "price": 2.95,
     "active": false
+  },
+  {
+    "name": "(Scone) Gingerbread",
+    "price": 1.8,
+    "active": true
   },
   {
     "name": "(Scone) Maple Pumpkin",
