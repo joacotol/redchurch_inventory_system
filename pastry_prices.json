@@ -535,6 +535,11 @@
     "active": true
   },
   {
+    "name": "(Square) Peppermint Fudge Brownie",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Square) Rhubarb Cake",
     "price": 2.0,
     "active": false
