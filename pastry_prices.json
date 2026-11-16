@@ -5,9 +5,9 @@
     "active": true
   },
   {
-    "name": "(Cookie) Matcha White Chocolate",
+    "name": "(Cookie) Ginger Molasses",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Croissant) Almond Croissant",
@@ -52,7 +52,7 @@
   {
     "name": "(Danish) Iced Cinnamon",
     "price": 1.95,
-    "active": true
+    "active": false
   },
   {
     "name": "(Danish) Spinach Artichoke",
@@ -107,17 +107,17 @@
   {
     "name": "(Donut) Brownie Batter",
     "price": 0.0,
-    "active": false
-  },
-  {
-    "name": "(Donut) Buttered Toast",
-    "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Butterfingers Bullseye",
     "price": 0.0,
     "active": false
+  },
+  {
+    "name": "(Donut) Butterscotch bread pudding",
+    "price": 0.0,
+    "active": true
   },
   {
     "name": "(Donut) Cafe au Lait",
@@ -247,7 +247,7 @@
   {
     "name": "(Donut) Ginger Coconut",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Grapefruit Sunshine (V)",
@@ -300,14 +300,14 @@
     "active": false
   },
   {
-    "name": "(Donut) Lemon Lime Thai Tea Fill",
+    "name": "(Donut) London Fog Filled",
     "price": 0.0,
     "active": false
   },
   {
-    "name": "(Donut) London Fog Filled",
+    "name": "(Donut) Long John",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Mango Cocnut",
@@ -452,7 +452,7 @@
   {
     "name": "(Loaves) Chocolate Banana",
     "price": 1.58,
-    "active": false
+    "active": true
   },
   {
     "name": "(Loaves) Iced Carrot",
@@ -462,7 +462,7 @@
   {
     "name": "(Loaves) Vegan Pumpkin Chocolate",
     "price": 2.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Muffin) Banana Walnut (V)",
@@ -482,7 +482,7 @@
   {
     "name": "(Muffin) Pumpkin Pepita",
     "price": 1.65,
-    "active": true
+    "active": false
   },
   {
     "name": "(Muffin) Toffee Chocolate",
@@ -517,7 +517,7 @@
   {
     "name": "(Scone) Maple Pumpkin",
     "price": 1.8,
-    "active": true
+    "active": false
   },
   {
     "name": "(Square) Caramel Sea Salt Brownie",
@@ -552,6 +552,6 @@
   {
     "name": "(Tarts) Pumpkin Pecan",
     "price": 2.4,
-    "active": true
+    "active": false
   }
 ]
