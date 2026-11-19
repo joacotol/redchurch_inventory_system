@@ -15645,5 +15645,41 @@
       }
     ],
     "updated_at": "2026-11-18T22:23:38.119197Z"
+  },
+  "2026-11-19": {
+    "date": "2026-11-19",
+    "entries": [
+      {
+        "item": "(Croissant) Hazelnut Pain Suisse",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 3.3
+      },
+      {
+        "item": "(Scone) Gingerbread",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      }
+    ],
+    "updated_at": "2026-11-19T22:05:11.245835Z"
   }
 }
