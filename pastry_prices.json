@@ -107,7 +107,7 @@
   {
     "name": "(Donut) Brownie Batter",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Butterfingers Bullseye",
@@ -117,7 +117,7 @@
   {
     "name": "(Donut) Butterscotch bread pudding",
     "price": 0.0,
-    "active": true
+    "active": false
   },
   {
     "name": "(Donut) Cafe au Lait",
@@ -170,14 +170,24 @@
     "active": false
   },
   {
+    "name": "(Donut) Chocolate Hazelnut Berry",
+    "price": 0.0,
+    "active": true
+  },
+  {
     "name": "(Donut) Chocolate Toffee",
     "price": 0.0,
     "active": false
   },
   {
-    "name": "(Donut) Cinnamon Spice",
+    "name": "(Donut) Cinnamom Bun Fritter",
     "price": 0.0,
     "active": true
+  },
+  {
+    "name": "(Donut) Cinnamon Spice",
+    "price": 0.0,
+    "active": false
   },
   {
     "name": "(Donut) Cocoa Berry (V)",
@@ -437,7 +447,7 @@
   {
     "name": "(Donut) Vanilla Bean",
     "price": 0.0,
-    "active": false
+    "active": true
   },
   {
     "name": "(Donut) Vanilla Sprinkle",
