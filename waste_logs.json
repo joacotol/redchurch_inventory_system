@@ -15873,5 +15873,41 @@
       }
     ],
     "updated_at": "2026-11-22T21:43:31.099114Z"
+  },
+  "2026-11-23": {
+    "date": "2026-11-23",
+    "entries": [
+      {
+        "item": "(Croissant) Hazelnut Pain Suisse",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 3.3
+      },
+      {
+        "item": "(Croissant) Caramel Apple",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 3.3
+      },
+      {
+        "item": "(Donut) Chocolate Hazelnut Berry",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Muffin) Gingerbread",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.65
+      },
+      {
+        "item": "(Scone) Gingerbread",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      }
+    ],
+    "updated_at": "2026-11-23T22:18:17.453959Z"
   }
 }
