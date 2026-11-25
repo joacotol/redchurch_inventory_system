@@ -15951,5 +15951,65 @@
       }
     ],
     "updated_at": "2026-11-24T21:36:03.535113Z"
+  },
+  "2026-11-25": {
+    "date": "2026-11-25",
+    "entries": [
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Croissant) Almond Croissant",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 2.95
+      },
+      {
+        "item": "(Croissant) Hazelnut Pain Suisse",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 3.3
+      },
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Gingerbread",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Donut) Cinnamom Bun Fritter",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Chocolate Hazelnut Berry",
+        "qty": 5,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Vanilla Bean",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-11-25T20:48:54.860203Z"
   }
 }
