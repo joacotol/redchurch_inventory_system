@@ -16011,5 +16011,65 @@
       }
     ],
     "updated_at": "2026-11-25T20:48:54.860203Z"
+  },
+  "2026-11-26": {
+    "date": "2026-11-26",
+    "entries": [
+      {
+        "item": "(Donut) Cinnamom Bun Fritter",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Chocolate Hazelnut Berry",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Cinnamon Spice",
+        "qty": 3,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Donut) Apple Fritter",
+        "qty": 4,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      },
+      {
+        "item": "(Croissant) Hazelnut Pain Suisse",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 3.3
+      },
+      {
+        "item": "(Danish) Caramelized Onion and Goat Cheese",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Danish) Spinach Artichoke",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 2.75
+      },
+      {
+        "item": "(Scone) Gingerbread",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Loaves) Chocolate Banana",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 1.58
+      }
+    ],
+    "updated_at": "2026-11-26T22:26:29.806719Z"
   }
 }
