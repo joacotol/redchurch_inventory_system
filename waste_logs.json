@@ -16076,12 +16076,6 @@
     "date": "2026-11-27",
     "entries": [
       {
-        "item": "(Scone) Cheddar & Chive",
-        "qty": 2,
-        "reason": "Not sold",
-        "unit_price": 1.8
-      },
-      {
         "item": "(Scone) Gingerbread",
         "qty": 2,
         "reason": "Not sold",
@@ -16100,6 +16094,6 @@
         "unit_price": 0.0
       }
     ],
-    "updated_at": "2026-11-27T22:28:11.633222Z"
+    "updated_at": "2026-11-27T22:29:11.282619Z"
   }
 }
