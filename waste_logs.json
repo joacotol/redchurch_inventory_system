@@ -16071,5 +16071,35 @@
       }
     ],
     "updated_at": "2026-11-26T22:26:35.451139Z"
+  },
+  "2026-11-27": {
+    "date": "2026-11-27",
+    "entries": [
+      {
+        "item": "(Scone) Cheddar & Chive",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Scone) Gingerbread",
+        "qty": 2,
+        "reason": "Not sold",
+        "unit_price": 1.8
+      },
+      {
+        "item": "(Croissant) Hazelnut Pain Suisse",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 3.3
+      },
+      {
+        "item": "(Square) Peppermint Fudge Brownie",
+        "qty": 1,
+        "reason": "Not sold",
+        "unit_price": 0.0
+      }
+    ],
+    "updated_at": "2026-11-27T22:28:11.633222Z"
   }
 }
